@@ -1,7 +1,7 @@
 CompTIA Security+ (SY0-701) – 10 Day Sprint (February 2026)
 This file explains how I prepared for Security+ in a 10‑day focused sprint, even with a basic background in networking and security.
 
-Before the sprint
+**Before the sprint**
 • Pre-2026 Foundation (July-Aug 2025): Studied select Security+ objectives before pausing for my Master's thesis/project. Covered:
 
 • 1.1-1.4: CIA triad, AAA, Zero Trust, security controls, change mgmt, PKI/crypto.
@@ -14,12 +14,12 @@ Before the sprint
 
 • Had some hands-on security exposure (CTFs, labs, basic tools like Nmap and SIEM-style logging).
 
-Resources I used
-Official CompTIA Security+ SY0-701 exam objectives PDF.
+**Resources I used**
+• Official CompTIA Security+ SY0-701 exam objectives PDF.
 
-Free MCQ sites like ExamTopics for domain-specific practice.
+• Free MCQ sites like ExamTopics for domain-specific practice.
 
-Cyberkraft selectively for PBQ simulations and test-taking tips.
+• Cyberkraft selectively for PBQ simulations and test-taking tips.
 
 10-Day Study Plan
 • Day 1 – Domain 1.0 General Security Concepts (12%)
