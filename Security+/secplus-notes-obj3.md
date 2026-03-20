@@ -1,807 +1,513 @@
-Domain 3 – Security Architecture
+# Domain 3 – Security Architecture
 
-Security architecture focuses on designing secure enterprise systems and infrastructure.
+Security architecture focuses on designing secure enterprise systems and infrastructure.  
 It includes network architecture, secure communication, infrastructure protection, data protection, and resilience planning.
 
-3.1 Compare and Contrast Security Implications of Different Architecture Models
+---
 
-Security architecture models determine how systems and infrastructure are designed, deployed, and secured.
+## 3.1 Security Architecture Models
 
-Architecture and Infrastructure Concepts
-Cloud Computing
+Security architecture models define how systems are designed, deployed, and secured.
 
-Cloud computing delivers computing services over the internet.
+---
 
-Security responsibility is shared between the cloud provider and the customer.
+### Cloud Computing
 
-Responsibility Matrix
+Cloud computing delivers services over the internet using a shared responsibility model.
 
-Defines which security responsibilities belong to:
+#### Responsibility Matrix
 
-Cloud provider
+| Responsibility        | Cloud Provider | Customer |
+|----------------------|--------------|----------|
+| Physical Security    | ✓            |          |
+| Hardware             | ✓            |          |
+| Data Protection      |              | ✓        |
+| Identity Management  |              | ✓        |
+| Application Security |              | ✓        |
 
-Customer
+---
 
-Example:
+### Hybrid Cloud
 
-Provider responsibilities
+Combination of on-premises and cloud infrastructure.
 
-Physical data center security
+**Security Concerns:**
+- Data movement  
+- Identity management  
+- Network security  
 
-Hardware infrastructure
+---
 
-Customer responsibilities
+### Third-Party Vendors
 
-Data protection
+External service providers (e.g., cloud, SaaS, MSSP).
 
-Identity management
+**Risks:**
+- Supply chain attacks  
+- Data exposure  
+- Service compromise  
 
-Application security
+---
 
-Hybrid Cloud Considerations
+### Infrastructure as Code (IaC)
 
-Hybrid cloud combines:
+Infrastructure managed using scripts/config files.
 
-On-premises infrastructure
+**Benefits:**
+- Automation  
+- Consistency  
+- Faster deployment  
 
-Cloud services
+**Risk:**
+- Misconfiguration at scale  
 
-Security concerns include:
+---
 
-Data movement
+### Serverless Architecture
 
-Identity management
+Code execution without managing servers.
 
-Network security
+**Example:** AWS Lambda  
 
-Third-Party Vendors
+**Security Considerations:**
+- API security  
+- Permissions  
+- Identity access management  
 
-External companies providing services such as:
+---
 
-Cloud hosting
+### Microservices Architecture
 
-Software platforms
+Applications split into smaller independent services.
 
-Managed security services
+**Benefits:**
+- Scalability  
+- Flexibility  
+- Fault isolation  
 
-Security risks include:
+**Risks:**
+- Complex security  
+- API exposure  
 
-supply chain attacks
+---
 
-data exposure
-
-service compromise
-
-Infrastructure as Code (IaC)
-
-Infrastructure managed through configuration files or scripts rather than manual processes.
-
-Benefits:
-
-automation
-
-consistent deployments
-
-faster provisioning
-
-Risk:
-
-misconfiguration at scale.
-
-Serverless Architecture
-
-Cloud model where developers deploy code without managing servers.
-
-Example:
-
-AWS Lambda
-
-Security considerations:
-
-API security
-
-function permissions
-
-identity access management
-
-Microservices Architecture
-
-Applications divided into small independent services.
-
-Benefits:
-
-scalability
-
-flexibility
-
-fault isolation
-
-Risks:
-
-complex security management
-
-API exposure
-
-Network Infrastructure
-
-Includes physical and virtual networking components such as:
-
-routers
-
-switches
-
-gateways
-
-firewalls
-
-Proper design improves:
-
-segmentation
-
-traffic monitoring
-
-attack detection
-
-Physical Isolation
-
-Physical separation of systems to prevent unauthorized communication.
-
-Air-Gapped Systems
-
-Systems completely isolated from networks and the internet.
-
-Used in:
-
-military systems
-
-critical infrastructure
-
-Logical Segmentation
-
-Separating networks using logical controls such as:
-
-VLANs
-
-subnets
-
-firewall rules
-
-Purpose:
-
-reduce attack surface
-
-limit lateral movement
-
-Software-Defined Networking (SDN)
-
-Network architecture controlled through software rather than hardware.
-
-Benefits:
-
-centralized management
-
-automated configuration
-
-Risk:
-
-compromise of central controller.
-
-On-Premises Infrastructure
-
-Systems hosted within the organization's physical environment.
-
-Advantages:
-
-full control over security
-
-compliance management
-
-Disadvantages:
-
-high maintenance cost.
-
-Centralized vs Decentralized Architecture
-
-Centralized architecture
-
-control managed from one location.
-
-Decentralized architecture
-
-distributed across multiple systems.
-
-Security considerations:
-
-centralized systems easier to monitor
-
-decentralized systems improve resilience.
-
-Containerization
-
-Applications packaged into containers that include all dependencies.
-
-Example:
-
-Docker containers.
-
-Benefits:
-
-portability
-
-scalability
-
-resource efficiency
-
-Risks:
-
-container escape
-
-insecure container images.
-
-Virtualization
-
-Running multiple virtual machines on one physical system.
-
-Benefits:
-
-resource optimization
-
-isolation between systems
-
-Risks:
-
-hypervisor attacks
-
-VM escape.
-
-Internet of Things (IoT)
-
-Devices connected to the internet.
-
-Examples:
-
-smart cameras
-
-smart thermostats
-
-industrial sensors
-
-Risks:
-
-weak authentication
-
-outdated firmware
-
-limited security controls.
-
-Industrial Control Systems (ICS) / SCADA
-
-Systems used to control industrial processes.
-
-Examples:
-
-power plants
-
-water treatment
-
-manufacturing systems
-
-Security concerns:
-
-critical infrastructure attacks
-
-legacy system vulnerabilities.
-
-Real-Time Operating Systems (RTOS)
-
-Operating systems designed to process data in real-time with minimal delay.
-
-Used in:
-
-embedded systems
-
-robotics
-
-aviation systems.
-
-Embedded Systems
-
-Dedicated computing systems integrated into hardware devices.
-
-Examples:
-
-medical devices
-
-vehicle control systems
-
-smart appliances.
-
-High Availability
-
-Systems designed to operate continuously without downtime.
-
-Methods include:
-
-redundancy
-
-clustering
-
-load balancing.
-
-Architecture Design Considerations
-
-When designing secure infrastructure, consider:
-
-Availability
-
-Ensuring systems remain accessible to users.
-
-Resilience
-
-Ability of systems to recover quickly from disruptions.
-
-Cost
-
-Balancing security with operational budget.
-
-Responsiveness
-
-System performance and user experience.
-
-Scalability
-
-Ability to expand infrastructure as demand increases.
-
-Ease of Deployment
-
-How quickly systems can be implemented.
-
-Risk Transference
-
-Shifting risk to third parties such as cloud providers or insurance.
-
-Ease of Recovery
-
-Ability to restore systems after incidents.
-
-Patch Availability
-
-Ability to apply security updates.
-
-Inability to Patch
-
-Some legacy systems cannot receive updates.
-
-Power Requirements
-
-Systems require reliable electricity sources.
-
-Compute Resources
-
-Processing capacity required for workloads.
-
-3.2 Apply Security Principles to Secure Enterprise Infrastructure
-
-Infrastructure security involves protecting network devices, communication channels, and system access points.
-
-Infrastructure Considerations
-Device Placement
-
-Positioning devices strategically to protect critical assets.
-
-Example:
-
-placing firewalls at network boundaries.
-
-Security Zones
-
-Dividing networks into zones based on trust level.
-
-Examples:
-
-DMZ (Demilitarized Zone)
-
-Internal network
-
-External network
-
-Attack Surface
-
-Total number of potential entry points attackers can exploit.
-
-Reducing attack surface improves security.
-
-Connectivity
-
-Network connections between systems.
-
-Examples:
-
-wired networks
-
-wireless networks
-
-VPN connections.
-
-Failure Modes
-
-How systems behave during failure.
-
-Fail-Open
-
-System allows traffic when failure occurs.
-
-Advantage:
-
-availability
-
-Risk:
-
-security exposure.
-
-Fail-Closed
-
-System blocks traffic during failure.
-
-Advantage:
-
-strong security
-
-Risk:
-
-service disruption.
-
-Device Attributes
-Active vs Passive
-
-Active devices
-
-interact with network traffic.
-
-Passive devices
-
-monitor traffic without altering it.
-
-Inline vs Tap / Monitor
-
-Inline devices
-
-placed directly in network path.
-
-Tap / monitor devices
-
-observe traffic without interrupting flow.
-
-Network Appliances
-Jump Server
-
-Secure server used to access sensitive systems.
-
-Purpose:
-
-controlled administrative access.
-
-Proxy Server
-
-Server that acts as intermediary between users and internet resources.
-
-Functions:
-
-filtering traffic
-
-anonymizing requests
-
-caching data.
-
-Intrusion Detection System (IDS)
-
-Monitors network traffic for suspicious activity.
-
-Alerts administrators but does not block traffic.
-
-Intrusion Prevention System (IPS)
-
-Actively blocks malicious traffic.
-
-Load Balancer
-
-Distributes network traffic across multiple servers.
-
-Benefits:
-
-performance improvement
-
-high availability.
-
-Sensors
-
-Devices that collect security data for monitoring.
-
-Examples:
-
-network sensors
-
-environmental sensors.
-
-Port Security
-IEEE 802.1X
-
-Network authentication protocol controlling access to network ports.
-
-Extensible Authentication Protocol (EAP)
-
-Framework used for authentication methods in network access.
-
-Firewall Types
-Web Application Firewall (WAF)
-
-Protects web applications from attacks such as:
-
-SQL injection
-
-cross-site scripting.
-
-Unified Threat Management (UTM)
-
-Security device combining multiple security functions such as:
-
-firewall
-
-antivirus
-
-intrusion detection.
-
-Next-Generation Firewall (NGFW)
-
-Advanced firewall with features such as:
-
-deep packet inspection
-
-application awareness
-
-intrusion prevention.
-
-Layer 4 vs Layer 7 Firewalls
-
-Layer 4 firewall
-
-filters traffic based on IP and port.
-
-Layer 7 firewall
-
-inspects application-level data.
-
-Secure Communication
-Virtual Private Network (VPN)
-
-Encrypted tunnel allowing secure remote access.
-
-Remote Access
-
-Access to corporate systems from external locations.
-
-Tunneling Protocols
-
-Protocols that encapsulate data for secure transmission.
-
-Examples:
-
-Transport Layer Security (TLS)
-
-Internet Protocol Security (IPSec)
-
-Software-Defined WAN (SD-WAN)
-
-Software-based technology managing wide area network connectivity.
-
-Benefits:
-
-improved performance
-
-centralized control.
-
-Secure Access Service Edge (SASE)
-
-Cloud-based architecture combining networking and security services.
+### Network Infrastructure
 
 Includes:
+- Routers  
+- Switches  
+- Firewalls  
+- Gateways  
 
-secure web gateways
+**Benefits:**
+- Segmentation  
+- Monitoring  
+- Threat detection  
 
-firewall as a service
+---
 
-zero trust network access.
+### Isolation Techniques
 
-Selection of Effective Controls
+#### Physical Isolation
+- Complete separation of systems  
 
-Security controls must be selected based on:
+#### Air-Gapped Systems
+- No network/internet connection  
+- Used in critical environments  
 
-risk level
+---
 
-system requirements
+### Logical Segmentation
 
-compliance regulations.
+- VLANs  
+- Subnets  
+- Firewall rules  
 
-3.3 Protect Data
+**Purpose:**
+- Reduce attack surface  
+- Prevent lateral movement  
 
-Protecting organizational data is a critical part of security architecture.
+---
 
-Data Types
-Regulated Data
+### Software-Defined Networking (SDN)
 
-Data governed by laws and regulations.
+Network controlled via software.
 
-Examples:
+**Benefits:**
+- Centralized control  
+- Automation  
 
-health records
+**Risk:**
+- Controller compromise  
 
-financial data
+---
 
-Trade Secrets
+### On-Premises Infrastructure
 
-Confidential business information.
+**Advantages:**
+- Full control  
+- Easier compliance  
 
-Intellectual Property
+**Disadvantages:**
+- High cost  
+- Maintenance overhead  
 
-Patents, designs, and proprietary knowledge.
+---
 
-Legal Information
+### Architecture Models
 
-Documents related to legal matters.
+| Model         | Description |
+|---------------|------------|
+| Centralized   | Single control point |
+| Decentralized | Distributed systems |
 
-Financial Information
+**Security Insight:**
+- Centralized → easier monitoring  
+- Decentralized → better resilience  
 
-Accounting records and financial transactions.
+---
 
-Human-Readable Data
+### Containerization
 
-Data understandable by humans.
+Applications packaged with dependencies.
 
-Example:
+**Example:** Docker  
 
-documents.
+**Benefits:**
+- Portability  
+- Scalability  
 
-Non-Human-Readable Data
+**Risks:**
+- Container escape  
+- Insecure images  
 
-Machine-readable data such as binary files.
+---
 
-Data Classification
+### Virtualization
 
-Organizations categorize data based on sensitivity.
+Multiple VMs on one system.
 
-Examples:
+**Benefits:**
+- Resource efficiency  
+- Isolation  
 
-Sensitive
-Confidential
-Public
-Restricted
-Private
-Critical
+**Risks:**
+- Hypervisor attacks  
+- VM escape  
 
-Data States
-Data at Rest
+---
 
-Data stored on storage devices.
+### IoT (Internet of Things)
 
-Data in Transit
+Connected smart devices.
 
-Data moving across networks.
+**Risks:**
+- Weak authentication  
+- Outdated firmware  
+- Limited security  
 
-Data in Use
+---
 
-Data actively being processed.
+### ICS / SCADA
 
-Data Sovereignty
+Industrial control systems.
 
-Legal requirement that data must remain within specific geographic locations.
+**Examples:**
+- Power plants  
+- Manufacturing  
 
-Geolocation
+**Risks:**
+- Critical infrastructure attacks  
+- Legacy vulnerabilities  
 
-Tracking data location for regulatory compliance.
+---
 
-Methods to Secure Data
+### RTOS (Real-Time OS)
 
-Geographic restrictions
+Used in:
+- Robotics  
+- Aviation  
+- Embedded systems  
 
-Encryption
+---
 
-Hashing
+### Embedded Systems
 
-Masking
+Dedicated systems inside hardware.
 
-Tokenization
+**Examples:**
+- Medical devices  
+- Vehicles  
 
-Obfuscation
+---
 
-Segmentation
+### High Availability
 
-Permission restrictions
+Ensures continuous operation.
 
-3.4 Resilience and Recovery
+**Methods:**
+- Redundancy  
+- Clustering  
+- Load balancing  
 
-Resilience ensures systems continue operating during disruptions.
+---
 
-Recovery ensures systems return to normal after incidents.
+### Architecture Design Considerations
 
-High Availability
-Load Balancing
+- Availability  
+- Resilience  
+- Cost  
+- Responsiveness  
+- Scalability  
+- Ease of deployment  
+- Risk transference  
+- Recovery capability  
+- Patch availability  
+- Power requirements  
+- Compute resources  
 
-Distributes workloads across servers.
+---
 
-Clustering
+## 3.2 Securing Enterprise Infrastructure
 
-Multiple systems working together as a single system.
+---
 
-Site Types
-Hot Site
+### Infrastructure Considerations
 
-Fully operational backup facility.
+| Concept          | Description |
+|------------------|------------|
+| Device Placement | Strategic positioning (e.g., firewalls) |
+| Security Zones   | Network segmentation by trust level |
+| Attack Surface   | Total entry points |
+| Connectivity     | Network connections |
 
-Cold Site
+---
 
-Backup location with minimal infrastructure.
+### Failure Modes
 
-Warm Site
+| Mode        | Behavior | Risk |
+|-------------|----------|------|
+| Fail-Open   | Allows traffic | Security risk |
+| Fail-Closed | Blocks traffic | Availability risk |
 
-Partially equipped backup facility.
+---
 
-Geographic Dispersion
+### Device Types
 
-Systems distributed across multiple locations.
+| Type     | Description |
+|----------|------------|
+| Active   | Interacts with traffic |
+| Passive  | Monitors only |
 
-Platform Diversity
+---
 
-Using different hardware or software to reduce risk of single vulnerability affecting all systems.
+### Inline vs Monitor
 
-Multi-Cloud Systems
+| Type   | Description |
+|--------|------------|
+| Inline | In traffic path |
+| Tap    | Observes traffic |
 
-Using multiple cloud providers for redundancy and resilience.
+---
 
-Continuity of Operations
+### Network Appliances
 
-Plans ensuring essential services continue during disruptions.
+| Device        | Purpose |
+|---------------|--------|
+| Jump Server   | Secure admin access |
+| Proxy Server  | Intermediary for requests |
+| IDS           | Detects threats |
+| IPS           | Blocks threats |
+| Load Balancer | Distributes traffic |
+| Sensors       | Collect data |
 
-Capacity Planning
+---
 
-Planning system resources including:
+### Port Security
 
-People
+- IEEE 802.1X  
+- EAP (Extensible Authentication Protocol)  
 
-Technology
+---
 
-Infrastructure
+### Firewall Types
 
-Testing Methods
+| Firewall Type | Description |
+|---------------|------------|
+| WAF           | Protects web apps |
+| UTM           | Multiple security functions |
+| NGFW          | Advanced inspection |
 
-Tabletop exercises
+---
 
-Failover testing
+### Layer 4 vs Layer 7
 
-Simulation
+| Layer | Function |
+|-------|---------|
+| L4    | IP and port filtering |
+| L7    | Application-level inspection |
 
-Parallel processing
+---
 
-Backup Methods
+### Secure Communication
 
-Onsite backups
+| Technology | Description |
+|------------|------------|
+| VPN        | Encrypted tunnel |
+| TLS        | Secure communication |
+| IPSec      | Network-level encryption |
 
-Offsite backups
+---
 
-Backup frequency
+### Advanced Networking
 
-Encrypted backups
+| Technology | Description |
+|------------|------------|
+| SD-WAN     | Software-managed WAN |
+| SASE       | Cloud-based networking + security |
 
-Snapshots
+---
 
-Data replication
+### Control Selection
 
-Journaling
+Controls should be based on:
+- Risk level  
+- System requirements  
+- Compliance  
 
-Power Protection
-Generators
+---
 
-Backup power supply.
+## 3.3 Data Protection
 
-Uninterruptible Power Supply (UPS)
+---
 
-Battery system providing temporary power during outages.
+### Data Types
+
+| Type                  | Description |
+|-----------------------|------------|
+| Regulated Data        | Legal/compliance data |
+| Trade Secrets         | Confidential business data |
+| Intellectual Property | Patents, designs |
+| Financial Data        | Transactions, accounting |
+| Legal Data            | Legal documents |
+
+---
+
+### Data Formats
+
+- Human-readable (documents)  
+- Machine-readable (binary)  
+
+---
+
+### Data Classification
+
+- Public  
+- Private  
+- Confidential  
+- Restricted  
+- Critical  
+
+---
+
+### Data States
+
+| State         | Description |
+|---------------|------------|
+| At Rest       | Stored data |
+| In Transit    | Moving data |
+| In Use        | Processing data |
+
+---
+
+### Data Governance
+
+- Data sovereignty  
+- Geolocation compliance  
+
+---
+
+### Data Protection Methods
+
+- Encryption  
+- Hashing  
+- Masking  
+- Tokenization  
+- Obfuscation  
+- Segmentation  
+- Access control  
+
+---
+
+## 3.4 Resilience and Recovery
+
+---
+
+### High Availability Techniques
+
+- Load balancing  
+- Clustering  
+
+---
+
+### Site Types
+
+| Type      | Description |
+|-----------|------------|
+| Hot Site  | Fully operational |
+| Warm Site | Partially ready |
+| Cold Site | Minimal setup |
+
+---
+
+### Resilience Strategies
+
+- Geographic dispersion  
+- Platform diversity  
+- Multi-cloud environments  
+
+---
+
+### Continuity Planning
+
+Ensures business operations continue during disruptions.
+
+---
+
+### Capacity Planning
+
+Includes:
+- Personnel  
+- Technology  
+- Infrastructure  
+
+---
+
+### Testing Methods
+
+- Tabletop exercises  
+- Failover testing  
+- Simulations  
+- Parallel testing  
+
+---
+
+### Backup Methods
+
+- Onsite backups  
+- Offsite backups  
+- Encrypted backups  
+- Snapshots  
+- Data replication  
+- Journaling  
+
+---
+
+### Power Protection
+
+| Method     | Description |
+|------------|------------|
+| Generators | Backup power |
+| UPS        | Temporary power supply |
+
+---
