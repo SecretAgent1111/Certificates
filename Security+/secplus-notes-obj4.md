@@ -1,776 +1,486 @@
-4.1 Apply Security Techniques to Computing Resources
+# Domain 4 – Security Operations
 
-Security techniques are used to protect systems, devices, and infrastructure from attacks.
+This domain focuses on applying security techniques, managing assets, monitoring systems, handling vulnerabilities, and responding to incidents.
 
-Secure Baselines
+---
 
-A secure baseline is a predefined configuration standard that ensures systems are deployed securely.
+## 4.1 Security Techniques for Computing Resources
 
-Establish
+Security techniques protect systems, devices, and infrastructure.
 
-Create secure configuration standards.
+---
 
-Example:
+### Secure Baselines
 
-secure password policies
+A secure baseline is a predefined configuration standard.
 
-firewall configurations
+| Phase     | Description |
+|-----------|------------|
+| Establish | Define secure configurations |
+| Deploy    | Apply configurations |
+| Maintain  | Update configurations regularly |
 
-Deploy
+---
 
-Apply the secure configuration to systems.
+### Hardening Targets
 
-Maintain
+Hardening reduces vulnerabilities by minimizing attack surface.
 
-Regularly update baselines to address new threats.
+| Target              | Security Measures |
+|---------------------|------------------|
+| Mobile Devices      | MDM, encryption, app control |
+| Workstations        | Antivirus, patching, least privilege |
+| Switches            | Port security, VLANs |
+| Routers             | Disable unused services, firmware updates |
+| Cloud Infrastructure| Access control, encryption, monitoring |
+| Servers             | Patching, monitoring, access control |
+| ICS / SCADA         | Segmentation, monitoring |
+| Embedded Systems    | Limited controls, hardware constraints |
+| RTOS                | Real-time secure processing |
+| IoT Devices         | Strong authentication, firmware updates |
 
-Hardening Targets
+---
 
-Hardening means reducing vulnerabilities by removing unnecessary services and strengthening security controls.
+### Wireless Security
 
-Mobile Devices
+#### Installation Considerations
 
-Smartphones and tablets require protection against:
+- Site surveys  
+- Heat maps  
 
-malware
+---
 
-unauthorized access
-
-insecure apps
-
-Workstations
-
-User computers must be secured using:
-
-antivirus
-
-patching
-
-least privilege
-
-Switches
-
-Network switches should use:
-
-port security
-
-VLAN segmentation
-
-Routers
-
-Routers should be hardened by:
-
-disabling unused services
-
-updating firmware
-
-Cloud Infrastructure
-
-Cloud resources require:
-
-access control
-
-encryption
-
-monitoring
-
-Servers
-
-Servers hosting applications or services must be protected using:
-
-patching
-
-system monitoring
-
-access control
-
-ICS / SCADA Systems
-
-Industrial systems controlling infrastructure such as:
-
-power plants
-
-factories
-
-transportation systems
-
-These systems require strong segmentation and monitoring.
-
-Embedded Systems
-
-Dedicated devices such as:
-
-smart appliances
-
-medical devices
-
-automotive systems
-
-Security controls may be limited due to hardware constraints.
-
-Real-Time Operating Systems (RTOS)
-
-Operating systems designed to process tasks immediately without delay.
-
-Used in:
-
-robotics
-
-industrial equipment
-
-aerospace systems
-
-Internet of Things (IoT)
-
-Devices connected to networks such as:
-
-smart cameras
-
-sensors
-
-smart home devices
-
-Security risks include weak authentication and outdated firmware.
-
-Wireless Devices
-
-Wireless networks require additional security measures.
-
-Installation Considerations
-Site Surveys
-
-Analysis of wireless coverage areas before installing access points.
-
-Purpose:
-
-reduce signal interference
-
-prevent unauthorized access
-
-Heat Maps
-
-Visual representation of wireless signal strength across an area.
-
-Used to optimize access point placement.
-
-Mobile Solutions
-
-Organizations implement policies to manage mobile devices.
-
-Mobile Device Management (MDM)
-
-Software used to control and secure mobile devices.
+### Mobile Device Management (MDM)
 
 Capabilities:
+- Remote wipe  
+- Encryption  
+- Application control  
 
-remote wipe
+---
 
-device encryption
+### Deployment Models
 
-app control
+| Model | Description | Risk |
+|-------|------------|------|
+| BYOD  | Personal devices | Data leakage |
+| COPE  | Corporate-owned | Moderate risk |
+| CYOD  | Approved device list | Controlled risk |
 
-Deployment Models
-BYOD (Bring Your Own Device)
+---
 
-Employees use personal devices for work.
+### Connection Methods
 
-Risk:
+- Cellular  
+- Wi-Fi  
+- Bluetooth  
 
-data leakage
+---
 
-COPE (Corporate-Owned Personally Enabled)
+### Wireless Security Controls
 
-Organization provides devices but allows personal use.
+- WPA3  
+- RADIUS  
 
-CYOD (Choose Your Own Device)
+---
 
-Employees select from a list of approved devices.
+### Application Security
 
-Connection Methods
+| Technique             | Description |
+|----------------------|------------|
+| Input Validation     | Prevent malicious input |
+| Secure Cookies       | Protect session data |
+| Static Code Analysis | Code review without execution |
+| Code Signing         | Verify software integrity |
+| Sandboxing           | Isolate execution |
+| Monitoring           | Detect anomalies |
 
-Devices connect using:
+---
 
-Cellular networks
-Wi-Fi networks
-Bluetooth
+## 4.2 Asset Management
 
-Wireless Security Settings
-WPA3 (Wi-Fi Protected Access 3)
+Asset management ensures visibility and control over systems.
 
-Latest wireless encryption standard providing stronger security.
+---
 
-RADIUS (Remote Authentication Dial-In User Service)
+### Asset Lifecycle
 
-Centralized authentication system used in enterprise networks.
+| Phase                  | Description |
+|-----------------------|------------|
+| Acquisition           | Secure procurement |
+| Assignment            | Track ownership |
+| Monitoring            | Maintain inventory |
+| Disposal              | Secure removal |
 
-Cryptographic Protocols
+---
 
-Protocols used to protect wireless communications.
+### Key Concepts
 
-Authentication Protocols
+- Ownership  
+- Classification  
+- Inventory  
+- Enumeration  
 
-Protocols verifying user identity.
+---
 
-Application Security
+### Secure Disposal
 
-Protecting applications from vulnerabilities.
+| Method        | Description |
+|---------------|------------|
+| Sanitization  | Data removal |
+| Destruction   | Physical damage |
+| Certification | Proof of removal |
 
-Input Validation
+---
 
-Ensuring user input does not contain malicious data.
+### Data Retention
 
-Secure Cookies
+Defines how long data is stored.
 
-Cookies configured with security attributes to prevent theft.
+---
 
-Static Code Analysis
+## 4.3 Vulnerability Management
 
-Analyzing source code for vulnerabilities without executing it.
+Identifies and fixes security weaknesses.
 
-Code Signing
+---
 
-Digital signature verifying authenticity of software.
+### Identification Methods
 
-Sandboxing
+- Vulnerability scanning  
+- Static analysis  
+- Dynamic analysis  
+- Package monitoring  
+- Threat intelligence feeds  
+- Penetration testing  
+- Bug bounty programs  
+- Audits  
 
-Running applications in isolated environments to prevent system damage.
+---
 
-Monitoring
+### Threat Intelligence Sources
 
-Tracking application activity for suspicious behavior.
+- OSINT  
+- Proprietary feeds  
+- Sharing organizations  
+- Dark web monitoring  
 
-4.2 Hardware, Software, and Data Asset Management
+---
 
-Asset management ensures organizations know what assets exist and how they are secured.
+### Vulnerability Analysis
 
-Acquisition / Procurement
+| Concept            | Description |
+|-------------------|------------|
+| False Positive    | Incorrect detection |
+| False Negative    | Missed vulnerability |
+| CVSS              | Severity scoring |
+| CVE               | Public vulnerability database |
 
-Process of purchasing hardware or software securely.
+---
 
-Security considerations include:
+### Risk Factors
 
-vendor trust
+- Exposure factor  
+- Environmental variables  
+- Industry impact  
+- Risk tolerance  
 
-compliance requirements
+---
 
-Assignment / Accounting
+### Remediation
 
-Tracking who is responsible for assets.
+- Patching  
+- Segmentation  
+- Compensating controls  
+- Risk acceptance  
 
-Ownership
+---
 
-Designated person responsible for system or data.
+### Validation
 
-Classification
+- Rescanning  
+- Audit verification  
 
-Categorizing data based on sensitivity.
+---
 
-Example:
+### Reporting
 
-confidential
+Document vulnerabilities and fixes.
 
-public
+---
 
-restricted
+## 4.4 Security Monitoring and Alerting
 
-Monitoring and Asset Tracking
+Monitoring detects malicious activity.
 
-Maintaining records of assets.
+---
 
-Inventory
+### Monitoring Targets
 
-Complete list of devices and software in the organization.
+- Systems  
+- Applications  
+- Infrastructure  
 
-Enumeration
+---
 
-Process of identifying systems and services on a network.
+### Security Activities
 
-Disposal / Decommissioning
+- Log aggregation  
+- Alerting  
+- Scanning  
+- Reporting  
+- Log archiving  
 
-Secure removal of assets from operation.
+---
 
-Sanitization
+### Monitoring Tools
 
-Removing data from storage devices.
+| Tool        | Description |
+|-------------|------------|
+| SIEM        | Log analysis platform |
+| Antivirus   | Malware detection |
+| DLP         | Data protection |
+| NetFlow     | Traffic monitoring |
+| SNMP Traps  | Device alerts |
+| Vulnerability Scanners | Weakness detection |
 
-Destruction
+---
 
-Physically destroying storage media.
+### Frameworks and Standards
 
-Certification
+- SCAP  
+- CIS Benchmarks  
 
-Proof that data was securely removed.
+---
 
-Data Retention
+### Monitoring Types
 
-Policies defining how long data must be stored.
+| Type        | Description |
+|-------------|------------|
+| Agent-Based | Installed on system |
+| Agentless   | Remote monitoring |
 
-4.3 Vulnerability Management
+---
 
-Vulnerability management identifies and fixes security weaknesses.
+### Alert Response
 
-Identification Methods
-Vulnerability Scanning
+- Quarantine systems  
+- Tune alerts  
 
-Automated scanning tools identifying system weaknesses.
+---
 
-Application Security Testing
-Static Analysis
+## 4.5 Enterprise Security Modifications
 
-Examining source code without executing it.
+Improving security controls.
 
-Dynamic Analysis
+---
 
-Testing applications while they run.
+### Examples
 
-Package Monitoring
+- Firewall rules  
+- IDS/IPS tuning  
+- Web filtering  
+- DNS filtering  
+- Email security  
 
-Tracking vulnerabilities in software packages.
+---
 
-Threat Feeds
+### Email Security Controls
 
-Sources providing threat intelligence.
+- SPF  
+- DKIM  
+- DMARC  
 
-Examples:
+---
 
-Open-Source Intelligence (OSINT)
-Proprietary threat intelligence
-Information sharing organizations
-Dark web monitoring
+### Detection Technologies
 
-Penetration Testing
+| Tool | Description |
+|------|------------|
+| FIM  | File integrity monitoring |
+| EDR  | Endpoint detection |
+| XDR  | Extended detection |
+| UBA  | User behavior analytics |
 
-Simulated attacks to identify vulnerabilities.
+---
 
-Responsible Disclosure
+## 4.6 Identity and Access Management (IAM)
 
-Security researchers report vulnerabilities responsibly.
+Ensures only authorized access.
 
-Bug Bounty Programs
+---
 
-Organizations reward individuals who find vulnerabilities.
+### Account Management
 
-System / Process Audits
+- Provisioning  
+- De-provisioning  
+- Permission assignment  
 
-Evaluating security policies and controls.
+---
 
-Vulnerability Analysis
-False Positives
+### Identity Concepts
 
-Scanner reports vulnerability that does not exist.
+- Identity proofing  
+- Federation  
+- Single Sign-On (SSO)  
 
-False Negatives
+---
 
-Scanner fails to detect an existing vulnerability.
+### Protocols
 
-Prioritization
+- LDAP  
+- OAuth  
+- SAML  
 
-Ranking vulnerabilities based on risk level.
+---
 
-CVSS (Common Vulnerability Scoring System)
+### Access Control Models
 
-Standard used to rate vulnerability severity.
+| Model | Description |
+|-------|------------|
+| MAC   | Strict control |
+| DAC   | Owner-based |
+| RBAC  | Role-based |
+| Rule-Based | Rule-driven |
+| ABAC  | Attribute-based |
 
-CVE (Common Vulnerabilities and Exposures)
+---
 
-Public database of known vulnerabilities.
+### Authentication Controls
 
-Exposure Factor
+- MFA  
+- Biometrics  
+- Tokens  
+- Security keys  
 
-Percentage of asset loss if attack succeeds.
+---
 
-Environmental Variables
+### Authentication Factors
 
-Organizational factors affecting risk.
+- Something you know  
+- Something you have  
+- Something you are  
+- Somewhere you are  
 
-Industry Impact
+---
 
-How vulnerabilities affect industry operations.
+### Password Security
 
-Risk Tolerance
+- Complexity  
+- Length  
+- Expiration  
+- Reuse restrictions  
 
-Level of risk organization is willing to accept.
+---
 
-Remediation
-Patching
+### Advanced Concepts
 
-Applying updates to fix vulnerabilities.
+- Password managers  
+- Passwordless authentication  
+- Privileged Access Management (PAM)  
 
-Insurance
+---
 
-Cybersecurity insurance to reduce financial impact.
+## 4.7 Automation and Orchestration
 
-Segmentation
+Automation improves efficiency and consistency.
 
-Isolating systems to limit attack spread.
+---
 
-Compensating Controls
+### Use Cases
 
-Alternative security controls used when direct fixes are unavailable.
+- User provisioning  
+- Resource provisioning  
+- Ticketing  
+- Escalation workflows  
 
-Exceptions / Exemptions
+---
 
-Temporary acceptance of risk.
+### Technologies
 
-Validation
+- APIs  
+- CI/CD pipelines  
 
-After remediation, security teams must confirm the fix.
+---
 
-Methods:
+### Benefits
 
-Rescanning
-Audit verification
+- Efficiency  
+- Scalability  
+- Faster response  
 
-Reporting
+---
 
-Documenting vulnerability findings and remediation status.
+### Risks
 
-4.4 Security Monitoring and Alerting
+- Complexity  
+- Cost  
+- Single point of failure  
+- Maintenance challenges  
 
-Security monitoring detects malicious activity.
+---
 
-Monitoring Targets
+## 4.8 Incident Response
 
-Systems
-Applications
-Infrastructure
+Process for handling security incidents.
 
-Security Activities
+---
 
-Log aggregation
-Alerting
-Security scanning
-Reporting
-Log archiving
+### Phases
 
-Alert Response
+1. Preparation  
+2. Detection  
+3. Analysis  
+4. Containment  
+5. Eradication  
+6. Recovery  
+7. Lessons learned  
 
-Actions taken after alert detection.
+---
 
-Examples:
+### Key Activities
 
-Quarantine infected systems
-Alert tuning to reduce false positives
+- Training  
+- Testing (tabletop, simulation)  
+- Root cause analysis  
+- Threat hunting  
+- Digital forensics  
 
-Monitoring Tools
-SCAP (Security Content Automation Protocol)
+---
 
-Framework for security configuration management.
+### Legal Considerations
 
-Security Benchmarks
+- Legal hold  
+- Chain of custody  
+- Evidence acquisition  
+- Evidence preservation  
+- E-discovery  
 
-Security standards used to configure systems.
+---
 
-Example:
+## 4.9 Investigation Data Sources
 
-CIS benchmarks.
+Used for security investigations.
 
-Agents / Agentless Monitoring
+---
 
-Agents installed on systems collect security data.
+### Log Sources
 
-Agentless monitoring gathers data remotely.
+- Firewall logs  
+- Application logs  
+- Endpoint logs  
+- OS logs  
+- IDS/IPS logs  
+- Network logs  
 
-SIEM (Security Information and Event Management)
+---
 
-Centralized system collecting and analyzing security logs.
+### Additional Data
 
-Antivirus
+- Metadata  
+- Vulnerability scan results  
+- Security reports  
+- Dashboards  
+- Packet captures (PCAP)  
 
-Software detecting and removing malware.
-
-Data Loss Prevention (DLP)
-
-Tools preventing unauthorized data transfer.
-
-SNMP Traps
-
-Network alerts sent by devices to monitoring systems.
-
-NetFlow
-
-Technology monitoring network traffic flows.
-
-Vulnerability Scanners
-
-Tools identifying security weaknesses.
-
-4.5 Modify Enterprise Security Capabilities
-
-Security teams adjust security systems to improve protection.
-
-Examples include:
-
-Firewall configuration
-IDS/IPS tuning
-Web filtering
-
-Firewall Rules
-
-Control network traffic.
-
-Access Lists
-
-Define allowed network connections.
-
-Ports / Protocols
-
-Managing network communication channels.
-
-Screened Subnets
-
-Network zones isolated for security.
-
-IDS / IPS Signatures
-
-Detection rules identifying attack patterns.
-
-Web Filtering
-
-Blocking malicious websites.
-
-DNS Filtering
-
-Preventing access to malicious domains.
-
-Email Security
-
-DMARC
-DKIM
-SPF
-
-These protect against email spoofing.
-
-File Integrity Monitoring
-
-Detecting unauthorized file modifications.
-
-Endpoint Detection and Response (EDR)
-
-Monitoring endpoints for suspicious activity.
-
-Extended Detection and Response (XDR)
-
-Advanced detection across multiple systems.
-
-User Behavior Analytics
-
-Detecting abnormal user activity patterns.
-
-4.6 Identity and Access Management (IAM)
-
-IAM ensures only authorized users access resources.
-
-Account Provisioning
-
-Creating user accounts.
-
-De-provisioning
-
-Removing access when users leave organization.
-
-Permission Assignments
-
-Defining user privileges.
-
-Identity Proofing
-
-Verifying user identity before granting access.
-
-Federation
-
-Sharing authentication between organizations.
-
-Single Sign-On (SSO)
-
-Users authenticate once to access multiple systems.
-
-Protocols include:
-
-LDAP
-OAuth
-SAML
-
-Access Control Models
-
-Mandatory Access Control (MAC)
-
-Discretionary Access Control (DAC)
-
-Role-Based Access Control (RBAC)
-
-Rule-Based Access Control
-
-Attribute-Based Access Control (ABAC)
-
-Time-of-Day Restrictions
-
-Access allowed only during certain hours.
-
-Least Privilege
-
-Users receive minimal required access.
-
-Multifactor Authentication (MFA)
-
-Requires multiple authentication factors.
-
-Authentication Factors
-
-Something you know
-Something you have
-Something you are
-Somewhere you are
-
-Authentication Methods
-
-Biometrics
-Hardware tokens
-Software tokens
-Security keys
-
-Password Security
-
-Password length
-Password complexity
-Password reuse restrictions
-Password expiration policies
-Password age requirements
-
-Password Managers
-
-Secure storage for passwords.
-
-Passwordless Authentication
-
-Authentication without passwords.
-
-Example:
-
-biometrics or security keys.
-
-Privileged Access Management (PAM)
-
-Tools controlling administrator access.
-
-Features:
-
-Just-in-time permissions
-Password vaulting
-Ephemeral credentials
-
-4.7 Automation and Orchestration
-
-Automation uses scripts or tools to perform tasks automatically.
-
-Automation Use Cases
-
-User provisioning
-Resource provisioning
-Security groups
-Ticket creation
-Escalation workflows
-Enabling / disabling services
-
-Continuous Integration Testing
-
-Automated testing during software development.
-
-APIs (Application Programming Interfaces)
-
-Allow systems to communicate and automate processes.
-
-Benefits
-
-Efficiency
-Time savings
-Consistent security configurations
-Scalable infrastructure
-Faster response to incidents
-
-Risks
-
-Complexity
-Cost
-Single point of failure
-Technical debt
-Maintenance challenges
-
-4.8 Incident Response
-
-Incident response is the process of managing security incidents.
-
-Incident Response Phases
-
-Preparation
-Detection
-Analysis
-Containment
-Eradication
-Recovery
-Lessons learned
-
-Training
-
-Security teams must be trained for incident response.
-
-Testing
-
-Tabletop exercises
-Simulation exercises
-
-Root Cause Analysis
-
-Identifying how the incident occurred.
-
-Threat Hunting
-
-Proactively searching for hidden threats.
-
-Digital Forensics
-
-Collecting and analyzing digital evidence.
-
-Legal Hold
-
-Preserving evidence for legal investigations.
-
-Chain of Custody
-
-Documenting evidence handling.
-
-Evidence Acquisition
-
-Collecting digital evidence.
-
-Evidence Preservation
-
-Protecting evidence from tampering.
-
-E-Discovery
-
-Legal process of identifying digital evidence.
-
-4.9 Investigation Data Sources
-
-Security investigations rely on multiple data sources.
-
-Log Data
-
-Firewall logs
-Application logs
-Endpoint logs
-Operating system logs
-IDS / IPS logs
-Network logs
-
-Metadata
-
-Data describing other data such as timestamps and file attributes.
-
-Data Sources for Investigations
-
-Vulnerability scan results
-Automated security reports
-Security dashboards
-Packet captures (PCAP)
+---
