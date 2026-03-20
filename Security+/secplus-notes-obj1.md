@@ -1,382 +1,300 @@
 # CompTIA Security+ Notes
 
-1.0 General Security Concepts
-1.1 Security Controls
+---
+
+## 1.0 General Security Concepts
+
+---
+
+## 1.1 Security Controls
 
 Security controls are safeguards implemented to reduce risk and protect systems, networks, and data.
 
-Categories of Security Controls
+### Categories of Security Controls
 
-Technical Controls
-Security mechanisms implemented using technology such as firewalls, encryption, and intrusion detection systems.
+| Category       | Description |
+|---------------|------------|
+| Technical     | Security mechanisms implemented using technology (e.g., firewalls, encryption, IDS) |
+| Managerial    | Policies, procedures, and governance mechanisms created by management |
+| Operational   | Processes executed by people (e.g., training, incident response) |
+| Physical      | Physical measures (e.g., locks, guards, cameras) |
 
-Managerial Controls
-Policies, procedures, and governance mechanisms created by management to guide security operations.
+### Types of Security Controls
 
-Operational Controls
-Processes and procedures executed by people such as security awareness training and incident response.
+| Control Type        | Description | Example |
+|--------------------|------------|---------|
+| Preventive         | Prevent incidents before they occur | Firewall, access control |
+| Deterrent          | Discourage attackers | Warning banners, cameras |
+| Detective          | Identify incidents after they occur | IDS, SIEM alerts |
+| Corrective         | Restore systems after incidents | Backups, patching |
+| Compensating       | Alternative controls when primary controls are not possible | — |
+| Directive          | Guide behavior through policies | Security policies |
 
-Physical Controls
-Physical measures used to protect infrastructure such as locks, guards, and surveillance cameras.
+---
 
-Types of Security Controls
+## 1.2 Fundamental Security Concepts
 
-Preventive Controls
-Prevent security incidents before they occur.
-Example: firewall, access control.
+### CIA Triad
 
-Deterrent Controls
-Discourage attackers from attempting an attack.
-Example: warning banners, security cameras.
+The CIA Triad is the foundation of information security:
 
-Detective Controls
-Identify security incidents after they occur.
-Example: IDS, SIEM alerts.
+| Principle        | Description |
+|-----------------|------------|
+| Confidentiality | Data accessible only to authorized users |
+| Integrity       | Data remains accurate and unaltered |
+| Availability    | Systems and data available when needed |
 
-Corrective Controls
-Restore systems after an incident.
-Example: backups, patching.
+### Non-repudiation
 
-Compensating Controls
-Alternative security measures used when primary controls cannot be implemented.
+Ensures a user cannot deny performing an action.
 
-Directive Controls
-Policies or guidelines directing behavior.
-Example: security policies.
+**Implemented using:**
+- Digital signatures  
+- Logging  
+- Cryptographic proof  
 
-1.2 Fundamental Security Concepts
-CIA Triad
+---
 
-The CIA Triad is the foundation of information security.
+### AAA Framework
 
-Confidentiality
-Ensures that data is accessible only to authorized users.
+| Component       | Description |
+|----------------|------------|
+| Authentication | Verifying identity |
+| Authorization  | Determining access permissions |
+| Accounting     | Tracking user activity |
 
-Integrity
-Ensures that data remains accurate and unchanged unless modified by authorized users.
+---
 
-Availability
-Ensures that systems and data are accessible when needed.
+### Gap Analysis
 
-Non-repudiation
+Identifies the difference between current and desired security posture.
 
-Guarantees that a user cannot deny performing an action such as sending a message or initiating a transaction.
+**Used to identify:**
+- Missing controls  
+- Compliance gaps  
+- Security weaknesses  
 
-Implemented using:
+---
 
-Digital signatures
+### Zero Trust Architecture
 
-Logging
+Zero Trust assumes no implicit trust and requires continuous verification.
 
-Cryptographic proof
-
-AAA Framework
-
-Authentication
-Verifying the identity of a user or system.
-
-Authorization
-Determining what actions an authenticated user is allowed to perform.
-
-Accounting
-Tracking user actions for auditing and monitoring.
-
-Gap Analysis
-
-A process used to identify the difference between the current security posture and the desired security posture.
-
-Used to identify:
-
-missing controls
-
-compliance gaps
-
-security weaknesses
-
-Zero Trust Architecture
-
-Zero Trust assumes no implicit trust and requires continuous verification of users and systems.
-
-Control Plane
+#### Control Plane
 
 Handles identity verification and access decisions.
 
-Components include:
+- Adaptive identity  
+- Continuous verification  
+- Threat scope reduction  
+- Policy-driven access control  
 
-Adaptive identity
-Continuous verification of user identity.
+**Components:**
+- Policy Administrator  
+- Policy Engine  
 
-Threat scope reduction
-Limits attacker movement in a network.
+#### Data Plane
 
-Policy-driven access control
-Access decisions based on policies.
+Handles actual data traffic.
 
-Policy Administrator
-Implements access policies.
+**Components:**
+- Implicit trust zones  
+- Subject/System  
+- Policy Enforcement Point  
 
-Policy Engine
-Evaluates policies and decides access permissions.
+---
 
-Data Plane
+### Physical Security Controls
 
-Handles the actual data traffic.
+| Control                     | Description |
+|----------------------------|------------|
+| Bollards                   | Prevent vehicle access |
+| Mantrap                    | Secured entry requiring authentication |
+| Fencing                    | Perimeter protection |
+| Video Surveillance         | Monitoring via cameras |
+| Security Guard             | Human monitoring |
+| Access Badge               | Electronic authentication |
+| Lighting                   | Crime deterrence |
 
-Components include:
+---
 
-Implicit trust zones
-Network segments with controlled trust boundaries.
+### Security Sensors
 
-Subject/System
-User or device requesting access.
+| Sensor Type        | Function |
+|-------------------|----------|
+| Infrared          | Detect heat/movement |
+| Pressure          | Detect weight |
+| Microwave         | Detect motion via signals |
+| Ultrasonic        | Detect movement via sound |
 
-Policy Enforcement Point
-Component that enforces access policies.
+---
 
-Physical Security Controls
+### Deception Technologies
 
-Bollards
-Barriers used to stop vehicles from entering restricted areas.
+Used to detect attackers:
 
-Access Control Vestibule (Mantrap)
-A small secured area requiring authentication before entering.
+| Type        | Description |
+|-------------|------------|
+| Honeypot    | Decoy system |
+| Honeynet    | Network of honeypots |
+| Honeyfile   | Fake files |
+| Honeytoken  | Fake credentials/data |
 
-Fencing
-Physical barrier protecting facility perimeter.
+---
 
-Video Surveillance
-Cameras monitoring activity.
+## 1.3 Change Management
 
-Security Guard
-Human personnel monitoring security.
+Ensures system changes do not introduce vulnerabilities.
 
-Access Badge
-Electronic card used for authentication.
+### Business Process Elements
 
-Lighting
-Illumination used to deter criminals.
+- Approval process  
+- Ownership  
+- Stakeholders  
+- Impact analysis  
+- Test results  
+- Backout plan  
+- Maintenance window  
+- Standard Operating Procedures (SOP)  
 
-Security Sensors
+---
 
-Infrared Sensors
-Detect heat or movement.
+### Technical Implications
 
-Pressure Sensors
-Detect weight on surfaces.
+- Allow lists / Deny lists  
+- Restricted activities  
+- Downtime  
+- Service restart  
+- Application restart  
+- Legacy applications  
+- Dependencies  
 
-Microwave Sensors
-Detect motion using microwave signals.
+---
 
-Ultrasonic Sensors
-Detect movement using sound waves.
+### Documentation
 
-Deception Technologies
+- Updating diagrams  
+- Updating policies and procedures  
 
-Used to detect attackers.
+---
 
-Honeypot
-Decoy system designed to attract attackers.
+### Version Control
 
-Honeynet
-Network of honeypots.
+Tracks changes in configurations and code.
 
-Honeyfile
-Fake files used to detect unauthorized access.
+---
 
-Honeytoken
-Fake credentials or data used to identify attackers.
-
-1.3 Change Management
-
-Change management ensures that system changes do not introduce security vulnerabilities.
-
-Business Process Elements
-
-Approval Process
-Formal approval before changes occur.
-
-Ownership
-Defined responsibility for systems.
-
-Stakeholders
-Individuals affected by system changes.
-
-Impact Analysis
-Evaluation of risks before implementation.
-
-Test Results
-Testing ensures changes work correctly.
-
-Backout Plan
-Rollback strategy if changes fail.
-
-Maintenance Window
-Scheduled time for changes.
-
-Standard Operating Procedures (SOP)
-Documented procedures for operations.
-
-Technical Implications
-
-Allow lists / Deny lists
-Define permitted or blocked access.
-
-Restricted activities
-Limit high-risk operations.
-
-Downtime
-Time systems are unavailable.
-
-Service restart
-Restarting services to apply changes.
-
-Application restart
-Restarting software.
-
-Legacy applications
-Older systems that may be incompatible with updates.
-
-Dependencies
-Systems relying on each other.
-
-Documentation
-
-Updating diagrams
-Updating policies and procedures
-
-Version Control
-
-Tracking changes in system configurations and code.
-
-1.4 Cryptographic Solutions
+## 1.4 Cryptographic Solutions
 
 Cryptography protects data using mathematical techniques.
 
-Public Key Infrastructure (PKI)
+---
 
-Framework used for managing encryption keys.
+### Public Key Infrastructure (PKI)
 
-Public Key
-Shared key used to encrypt data.
+Framework for managing encryption keys.
 
-Private Key
-Secret key used to decrypt data.
+| Component   | Description |
+|-------------|------------|
+| Public Key  | Used to encrypt data |
+| Private Key | Used to decrypt data |
+| Key Escrow  | Third-party key storage |
 
-Key Escrow
-Storage of encryption keys by a trusted third party.
+---
 
-Encryption
+### Encryption
 
-Encryption converts plaintext into ciphertext.
+Converts plaintext into ciphertext.
 
-Types include:
+**Types:**
+- Full disk encryption  
+- Partition encryption  
+- File encryption  
+- Volume encryption  
+- Database encryption  
+- Record encryption  
 
-Full disk encryption
-Encrypts entire hard drive.
+---
 
-Partition encryption
-Encrypts disk partitions.
+### Encryption Methods
 
-File encryption
-Encrypts individual files.
+| Method        | Description |
+|---------------|------------|
+| Symmetric     | Single key |
+| Asymmetric    | Public/private key pair |
 
-Volume encryption
-Encrypts logical storage volumes.
+---
 
-Database encryption
-Encrypts database content.
+### Key Concepts
 
-Record encryption
-Encrypts specific database entries.
+- Key exchange  
+- Algorithms  
+- Key length  
 
-Encryption Methods
+---
 
-Symmetric Encryption
-Uses one key for encryption and decryption.
+### Cryptographic Hardware
 
-Asymmetric Encryption
-Uses public and private keys.
+| Component | Description |
+|----------|------------|
+| TPM      | Secure key storage chip |
+| HSM      | Dedicated cryptographic device |
+| KMS      | Key management system |
+| Secure Enclave | Isolated secure memory |
 
-Key Exchange
-Securely sharing encryption keys.
+---
 
-Algorithms
-Mathematical formulas used for encryption.
+### Obfuscation Techniques
 
-Key Length
-Size of encryption key affecting security strength.
+| Technique       | Description |
+|----------------|------------|
+| Steganography  | Hiding data in files |
+| Tokenization   | Replacing sensitive data |
+| Data Masking   | Obscuring data |
 
-Cryptographic Hardware
+---
 
-Trusted Platform Module (TPM)
-Hardware chip storing encryption keys.
+### Hashing
 
-Hardware Security Module (HSM)
-Secure hardware device for managing cryptographic keys.
+One-way function producing fixed-length output.
 
-Key Management System
-Manages encryption keys.
+### Salting
 
-Secure Enclave
-Isolated secure memory area.
+Adds random data before hashing passwords.
 
-Obfuscation Techniques
+---
 
-Steganography
-Hiding data within another file.
+### Digital Signatures
 
-Tokenization
-Replacing sensitive data with tokens.
+Ensure authenticity and integrity.
 
-Data Masking
-Hiding data with fictional values.
+---
 
-Hashing
+### Key Stretching
 
-One-way mathematical function converting data into fixed-length value.
+Increases password hashing complexity.
 
-Salting
+---
 
-Adding random data to passwords before hashing.
+### Blockchain
 
-Digital Signatures
+Distributed ledger for transactions.
 
-Cryptographic mechanism ensuring data authenticity and integrity.
+---
 
-Key Stretching
+### Certificates
 
-Technique that strengthens passwords by increasing hashing complexity.
+Digital identity verification.
 
-Blockchain
+| Type                          | Description |
+|-------------------------------|------------|
+| Certificate Authority (CA)    | Issues certificates |
+| CRL                           | Revoked certificates list |
+| OCSP                          | Real-time validation |
+| Self-signed                   | Created by owner |
+| Third-party                   | Issued by trusted CA |
+| Root of Trust                 | Trust anchor |
+| CSR                           | Certificate request |
+| Wildcard Certificates         | Secure subdomains |
 
-Distributed ledger storing transaction records.
-
-Certificates
-
-Digital documents verifying identity.
-
-Types include:
-
-Certificate Authorities (CA)
-Trusted organizations issuing certificates.
-
-Certificate Revocation Lists (CRL)
-List of revoked certificates.
-
-Online Certificate Status Protocol (OCSP)
-Real-time certificate validation.
-
-Self-signed certificates
-Certificates created by the owner.
-
-Third-party certificates
-Certificates issued by trusted authorities.
-
-Root of trust
-Trusted starting point in certificate hierarchy.
-
-Certificate Signing Request (CSR)
-Request sent to a CA to obtain a certificate.
-
-Wildcard certificates
-Certificates securing multiple subdomains.
+---
