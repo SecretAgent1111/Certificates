@@ -1,5 +1,4 @@
-# Domain 2 – Threats, Vulnerabilities, and Mitigations (22%)
-
+# Domain 2 – Threats, Vulnerabilities, and Mitigations 
 This domain focuses on understanding attackers, vulnerabilities, attack techniques, indicators of compromise, and mitigation strategies used to protect enterprise systems.
 
 ---
