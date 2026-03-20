@@ -1,685 +1,281 @@
-Domain 2 – Threats, Vulnerabilities, and Mitigations (22%)
+# Domain 2 – Threats, Vulnerabilities, and Mitigations (22%)
 
-This domain focuses on understanding attackers, vulnerabilities, attack techniques, indicators of compromise, and security mitigation methods used to protect enterprise systems.
+This domain focuses on understanding attackers, vulnerabilities, attack techniques, indicators of compromise, and mitigation strategies used to protect enterprise systems.
 
-2.1 Compare and Contrast Common Threat Actors and Motivations
-Threat Actors
-Nation-State
+---
 
-Government-sponsored attackers conducting cyber operations for espionage, warfare, or intelligence gathering.
-They usually have large resources, advanced tools, and skilled teams.
+## 2.1 Threat Actors and Motivations
 
-Example:
+### Threat Actors
 
-Cyber warfare operations
+| Threat Actor        | Description | Example |
+|--------------------|------------|---------|
+| Nation-State       | Government-sponsored attackers with advanced tools and large resources | Cyber warfare, intelligence gathering |
+| Script Kiddie      | Low-skilled attacker using pre-built tools | Downloading tools to attack websites |
+| Hacktivist         | Politically or ideologically motivated attacker | Website defacement, DDoS |
+| Insider Threat     | Authorized user causing harm (intentional or accidental) | Data theft, accidental exposure |
+| Organized Crime    | Criminal groups focused on financial gain | Ransomware, fraud |
+| Shadow IT          | Unauthorized systems used without IT approval | Personal cloud apps, unauthorized tools |
 
-Intelligence gathering from other governments
+---
 
-Unskilled Attacker (Script Kiddie)
+### Types of Insider Threats
 
-An individual with little technical knowledge who uses pre-built tools or scripts to perform attacks.
+- **Malicious Insider** – Intentional damage or theft  
+- **Negligent Insider** – Accidental exposure  
+- **Compromised Insider** – Account taken over  
 
-Characteristics:
+---
 
-Low skill level
+### Threat Actor Attributes
 
-Uses automated tools
+| Attribute            | Description |
+|---------------------|------------|
+| Internal            | Employees or insiders |
+| External            | Outside attackers |
+| Resources/Funding   | Low (script kiddie) → High (nation-state) |
+| Sophistication      | Low (automated) → High (APT) |
 
-Limited understanding of exploits
+---
 
-Example:
+### Threat Actor Motivations
 
-Downloading hacking tools and attacking websites.
+- Data exfiltration  
+- Espionage  
+- Service disruption (e.g., DDoS)  
+- Blackmail (e.g., ransomware)  
+- Financial gain  
+- Political/ideological reasons  
+- Ethical testing  
+- Revenge  
+- Chaos/disruption  
+- Cyber warfare  
 
-Hacktivist
+---
 
-Attackers motivated by political or ideological beliefs.
+## 2.2 Threat Vectors and Attack Surfaces
 
-Common targets:
+- **Threat Vector**: Path used to gain access  
+- **Attack Surface**: Total entry points in a system  
 
-Governments
+---
 
-Corporations
+### Message-Based Threats
 
-Political organizations
+| Vector | Description |
+|--------|------------|
+| Email  | Phishing, malware attachments |
+| SMS    | Smishing attacks |
+| IM     | Malicious links via chat apps |
 
-Common activities:
+---
 
-Website defacement
+### Other Attack Vectors
 
-Data leaks
+| Vector                | Description |
+|----------------------|------------|
+| Image-Based          | Malware hidden in images (steganography) |
+| File-Based           | Malicious PDFs, docs, executables |
+| Voice Call           | Vishing attacks |
+| Removable Devices    | USB malware (USB drop attacks) |
 
-DDoS attacks
+---
 
-Insider Threat
+### System & Network Vectors
 
-An employee, contractor, or partner with authorized access who intentionally or unintentionally causes harm.
+| Vector                | Description |
+|----------------------|------------|
+| Vulnerable Software  | Exploitable flaws |
+| Unsupported Systems  | No security updates |
+| Wireless Networks    | Weak Wi-Fi security |
+| Wired Networks       | Unsecured internal networks |
+| Bluetooth            | Bluejacking, Bluesnarfing |
+| Open Ports           | Exploitable services |
+| Default Credentials  | Weak default login credentials |
 
-Types:
+---
 
-Malicious insider
-An employee deliberately stealing or damaging data.
+### Supply Chain Attacks
 
-Negligent insider
-An employee who accidentally exposes sensitive data.
+Targets third-party vendors:
 
-Compromised insider
-An employee account taken over by attackers.
+- MSPs  
+- Software providers  
+- Hardware vendors  
 
-Organized Crime
+---
 
-Cybercriminal groups performing attacks for financial gain.
+### Social Engineering (Human Vectors)
 
-Activities include:
+| Attack Type | Description |
+|-------------|------------|
+| Phishing    | Fake emails |
+| Vishing     | Voice phishing |
+| Smishing    | SMS phishing |
+| BEC         | Business email compromise |
+| Pretexting  | Fake scenario |
+| Impersonation | Pretending to be trusted entity |
+| Watering Hole | Compromised trusted site |
+| Brand Impersonation | Fake websites |
+| Typosquatting | Misspelled domains |
 
-Ransomware campaigns
+---
 
-Identity theft
+## 2.3 Types of Vulnerabilities
 
-Credit card fraud
+A vulnerability is a weakness that can be exploited.
 
-Data selling on dark web
+---
 
-Shadow IT
+### Application Vulnerabilities
 
-Technology systems, applications, or services used without approval from the IT department.
+| Type              | Description |
+|-------------------|------------|
+| Memory Injection  | Injecting malicious code |
+| Buffer Overflow   | Exceeding memory limits |
+| Race Conditions   | Timing-based flaws (TOC/TOU) |
+| Malicious Update  | Compromised updates |
 
-Examples:
+---
 
-Personal cloud storage
+### Operating System Vulnerabilities
 
-Unauthorized SaaS tools
+- Kernel flaws  
+- Privilege escalation  
 
-Unapproved devices
+---
 
-Shadow IT increases security risk because IT cannot monitor or secure these systems.
+### Web-Based Vulnerabilities
 
-Attributes of Threat Actors
-Internal vs External
+| Type | Description |
+|------|------------|
+| SQL Injection (SQLi) | Malicious database queries |
+| Cross-Site Scripting (XSS) | Injecting scripts |
 
-Internal actors
-Employees or insiders with system access.
+---
 
-External actors
-Attackers outside the organization attempting unauthorized access.
+### Other Vulnerabilities
 
-Resources / Funding
+| Category            | Description |
+|--------------------|------------|
+| Hardware           | Firmware flaws, legacy systems |
+| Virtualization     | VM escape, resource reuse |
+| Cloud              | Misconfigurations |
+| Supply Chain       | Vendor weaknesses |
+| Cryptographic      | Weak encryption, poor key management |
+| Misconfiguration   | Incorrect settings (e.g., open ports) |
+| Mobile             | Sideloading, jailbreaking |
 
-Attackers differ in their available resources:
+---
 
-Low resources
-Script kiddies.
+### Zero-Day Vulnerability
 
-Moderate resources
-Hacktivists.
+Previously unknown vulnerability exploited before a fix is available.
 
-High resources
-Nation-state attackers.
+---
 
-Level of Sophistication
+## 2.4 Indicators of Malicious Activity
 
-Sophistication refers to the technical expertise and complexity of attacks.
+Indicators of Compromise (IoCs) help detect attacks.
 
-Low sophistication
-Automated attacks.
+---
 
-High sophistication
-Advanced Persistent Threats (APT).
+### Malware Types
 
-Threat Actor Motivations
-Data Exfiltration
+| Malware     | Description |
+|-------------|------------|
+| Ransomware  | Encrypts data for payment |
+| Trojan      | Disguised malware |
+| Worm        | Self-replicating |
+| Spyware     | Monitors activity |
+| Virus       | Attaches to files |
+| Keylogger   | Records keystrokes |
+| Rootkit     | Hides attacker presence |
+| Logic Bomb  | Trigger-based malware |
 
-Stealing sensitive data such as:
+---
 
-Intellectual property
+### Attack Categories
 
-Personal data
+#### Network Attacks
+- DDoS (amplified, reflected)  
+- DNS attacks  
+- Man-in-the-Middle  
+- Credential replay  
 
-Financial information
+#### Application Attacks
+- Injection  
+- Buffer overflow  
+- Privilege escalation  
+- Directory traversal  
 
-Espionage
+#### Cryptographic Attacks
+- Downgrade attacks  
+- Collision attacks  
+- Birthday attacks  
 
-Stealing confidential information for political or strategic advantage.
+#### Password Attacks
+- Brute force  
+- Password spraying  
 
-Service Disruption
+---
 
-Interrupting system operations such as:
+### Indicators of Compromise
 
-Websites
+- Account lockouts  
+- Concurrent sessions  
+- Impossible travel  
+- Resource spikes  
+- Missing logs  
+- Out-of-cycle logging  
+- Blocked content  
+- System inaccessibility  
 
-Online services
+---
 
-Corporate networks
+## 2.5 Mitigation Techniques
 
-Example: DDoS attacks.
+Mitigation reduces security risks.
 
-Blackmail
+---
 
-Threatening to release stolen data unless payment is made.
+### Network & Access Controls
 
-Example:
-Ransomware attacks.
+| Technique              | Description |
+|-----------------------|------------|
+| Segmentation          | Isolating network sections |
+| Access Control        | Restricting access |
+| ACLs                  | Traffic filtering rules |
+| Permissions           | User privilege control |
+| Application Allow List | Only approved apps allowed |
 
-Financial Gain
+---
 
-Attackers seek profit through:
+### System Protection
 
-Fraud
+- Isolation (quarantine systems)  
+- Patching (fix vulnerabilities)  
+- Encryption (protect data)  
+- Monitoring (continuous tracking)  
+- Least privilege (minimum access)  
+- Configuration enforcement  
 
-Cryptocurrency theft
+---
 
-Data resale
+### Lifecycle Management
 
-Philosophical or Political Beliefs
+- Decommissioning outdated systems  
 
-Hacktivists attacking organizations they oppose.
+---
 
-Ethical Motivation
+### Hardening Techniques
 
-Security researchers who test systems to improve security.
+- Encryption  
+- Endpoint protection  
+- Host-based firewall  
+- HIPS (Host Intrusion Prevention System)  
+- Disable unused ports/protocols  
+- Change default passwords  
+- Remove unnecessary software  
 
-Revenge
-
-Disgruntled employees seeking retaliation.
-
-Disruption / Chaos
-
-Attackers aiming to create instability or damage.
-
-War (Cyber Warfare)
-
-Government-backed cyber operations during geopolitical conflict.
-
-2.2 Explain Common Threat Vectors and Attack Surfaces
-
-A threat vector is the path attackers use to gain access to systems.
-
-An attack surface is the total number of possible entry points in a system.
-
-Message-Based Threat Vectors
-Email
-
-Most common attack vector.
-
-Examples:
-
-Phishing emails
-
-Malware attachments
-
-Malicious links
-
-Short Message Service (SMS)
-
-SMS-based attacks called smishing.
-
-Example:
-
-Fake banking messages requesting login credentials.
-
-Instant Messaging (IM)
-
-Malicious links sent via:
-
-Slack
-
-Teams
-
-WhatsApp
-
-Telegram
-
-Image-Based Threats
-
-Malicious payloads hidden inside image files.
-
-Example:
-
-Steganography hiding malware inside images.
-
-File-Based Threats
-
-Attackers distribute malicious files such as:
-
-PDFs
-
-Word documents
-
-Executables
-
-Often used in malware campaigns.
-
-Voice Call Attacks
-
-Voice phishing known as vishing.
-
-Example:
-
-Attacker impersonating bank support.
-
-Removable Device Attacks
-
-Malware delivered through devices such as:
-
-USB drives
-
-External hard drives
-
-Example:
-USB drop attacks.
-
-Vulnerable Software
-
-Software flaws that attackers exploit.
-
-Types:
-
-Client-based attacks
-Target software on user devices.
-
-Agentless attacks
-Exploit systems remotely without installed agents.
-
-Unsupported Systems
-
-Systems no longer receiving security updates.
-
-Example:
-
-End-of-life operating systems
-
-Outdated applications
-
-Unsecure Networks
-Wireless
-
-Weak Wi-Fi security configurations.
-
-Wired
-
-Unsecured internal networks.
-
-Bluetooth
-
-Short-range wireless attacks.
-
-Example:
-Bluejacking or Bluesnarfing.
-
-Open Service Ports
-
-Unused open ports that attackers exploit.
-
-Example:
-
-Port scanning to find vulnerabilities.
-
-Default Credentials
-
-Devices shipped with default usernames and passwords.
-
-Example:
-
-admin / admin
-
-Supply Chain Attacks
-
-Attacks targeting vendors to compromise organizations.
-
-Examples:
-
-Managed Service Providers (MSP)
-
-Vendors
-
-Hardware suppliers
-
-Software providers
-
-Human Vectors (Social Engineering)
-Phishing
-
-Fraudulent emails tricking users into revealing information.
-
-Vishing
-
-Voice-based phishing attacks.
-
-Smishing
-
-SMS phishing attacks.
-
-Misinformation / Disinformation
-
-False information designed to manipulate people.
-
-Impersonation
-
-Pretending to be someone else.
-
-Example:
-IT support impersonation.
-
-Business Email Compromise (BEC)
-
-Attack targeting corporate email accounts.
-
-Example:
-Fake CEO requesting urgent money transfer.
-
-Pretexting
-
-Creating a fabricated scenario to obtain information.
-
-Watering Hole Attack
-
-Compromising websites frequently visited by the target.
-
-Brand Impersonation
-
-Fake websites mimicking legitimate brands.
-
-Typosquatting
-
-Using misspelled domain names to trick users.
-
-Example:
-
-amaz0n.com
-
-2.3 Explain Various Types of Vulnerabilities
-
-A vulnerability is a weakness that attackers can exploit.
-
-Application Vulnerabilities
-Memory Injection
-
-Malicious code injected into application memory.
-
-Buffer Overflow
-
-Occurs when data exceeds allocated memory buffer.
-
-Allows attackers to execute malicious code.
-
-Race Conditions
-
-Security issues caused by improper timing of processes.
-
-Types:
-
-Time-of-check (TOC)
-
-Time-of-use (TOU)
-
-Malicious Update
-
-Compromised software update delivering malware.
-
-Operating System Vulnerabilities
-
-Security flaws in OS components.
-
-Examples:
-
-Kernel vulnerabilities
-
-Privilege escalation bugs
-
-Web-Based Vulnerabilities
-SQL Injection (SQLi)
-
-Injecting malicious SQL commands into database queries.
-
-Cross-Site Scripting (XSS)
-
-Injecting malicious scripts into web pages.
-
-Hardware Vulnerabilities
-
-Weaknesses in physical hardware.
-
-Examples:
-
-Firmware vulnerabilities
-
-End-of-life hardware
-
-Legacy systems
-
-Virtualization Vulnerabilities
-VM Escape
-
-Attack escaping virtual machine isolation.
-
-Resource Reuse
-
-Improper reuse of memory or storage between VMs.
-
-Cloud-Specific Vulnerabilities
-
-Misconfigured cloud services.
-
-Example:
-
-Public cloud storage buckets.
-
-Supply Chain Vulnerabilities
-
-Security weaknesses in vendors or suppliers.
-
-Cryptographic Vulnerabilities
-
-Weak encryption algorithms.
-
-Poor key management.
-
-Misconfiguration
-
-Incorrect system settings exposing vulnerabilities.
-
-Example:
-
-Open ports or weak firewall rules.
-
-Mobile Device Vulnerabilities
-Side Loading
-
-Installing apps outside official app stores.
-
-Jailbreaking
-
-Removing manufacturer security restrictions.
-
-Zero-Day Vulnerability
-
-Previously unknown vulnerability exploited before patches exist.
-
-2.4 Analyze Indicators of Malicious Activity
-
-Indicators of compromise (IoCs) help detect attacks.
-
-Malware Attacks
-Ransomware
-
-Encrypts files and demands payment.
-
-Trojan
-
-Malware disguised as legitimate software.
-
-Worm
-
-Self-replicating malware spreading across networks.
-
-Spyware
-
-Software secretly monitoring user activity.
-
-Bloatware
-
-Unwanted software consuming system resources.
-
-Virus
-
-Malware attaching to legitimate files.
-
-Keylogger
-
-Records user keystrokes.
-
-Logic Bomb
-
-Malicious code triggered by conditions.
-
-Rootkit
-
-Malware hiding attacker presence.
-
-Physical Attacks
-
-Brute force attacks
-
-RFID cloning
-
-Environmental attacks
-
-Network Attacks
-
-Distributed Denial-of-Service (DDoS)
-
-Amplified attacks
-
-Reflected attacks
-
-DNS attacks
-
-Wireless attacks
-
-On-path attacks (Man-in-the-Middle)
-
-Credential replay attacks
-
-Malicious code attacks
-
-Application Attacks
-
-Injection attacks
-
-Buffer overflow
-
-Replay attacks
-
-Privilege escalation
-
-Forgery
-
-Directory traversal
-
-Cryptographic Attacks
-
-Downgrade attacks
-
-Collision attacks
-
-Birthday attacks
-
-Password Attacks
-
-Password spraying
-
-Brute force attacks
-
-Indicators of Compromise
-
-Account lockouts
-
-Concurrent session usage
-
-Blocked content
-
-Impossible travel
-
-Resource consumption spikes
-
-Resource inaccessibility
-
-Out-of-cycle logging
-
-Published or documented vulnerabilities
-
-Missing logs
-
-2.5 Mitigation Techniques
-
-Mitigation techniques reduce security risks.
-
-Segmentation
-
-Dividing networks into isolated segments.
-
-Limits lateral movement of attackers.
-
-Access Control
-
-Restricting system access based on policies.
-
-Access Control Lists (ACL)
-
-Rules controlling network traffic.
-
-Permissions
-
-User privileges determining allowed actions.
-
-Application Allow List
-
-Only approved applications are allowed to run.
-
-Isolation
-
-Separating systems from networks.
-
-Example:
-
-Quarantining infected machines.
-
-Patching
-
-Applying updates to fix vulnerabilities.
-
-Encryption
-
-Protecting data confidentiality using cryptographic methods.
-
-Monitoring
-
-Continuous monitoring of systems and networks.
-
-Least Privilege
-
-Users receive the minimum access required.
-
-Configuration Enforcement
-
-Maintaining secure system configurations.
-
-Decommissioning
-
-Securely removing outdated systems from service.
-
-Hardening Techniques
-
-Encryption
-
-Endpoint protection
-
-Host-based firewall
-
-Host-based intrusion prevention system (HIPS)
-
-Disabling unnecessary ports and protocols
-
-Changing default passwords
-
-Removing unnecessary software
+---
