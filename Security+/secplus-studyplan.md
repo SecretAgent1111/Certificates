@@ -1,53 +1,192 @@
-CompTIA Security+ (SY0-701) – 10 Day Sprint (February 2026)
-This file explains how I prepared for Security+ in a 10‑day focused sprint, even with a basic background in networking and security.
+# CompTIA Security+ (SY0-701) – 10 Day Sprint (February 2026)
 
-**Before the sprint**
-• Pre-2026 Foundation (July-Aug 2025): Studied select Security+ objectives before pausing for my Master's thesis/project. Covered:
+This document outlines how I prepared for the CompTIA Security+ (SY0-701) exam in a focused 10-day sprint, building on a basic foundation in networking and security.
 
-• 1.1-1.4: CIA triad, AAA, Zero Trust, security controls, change mgmt, PKI/crypto.
+---
 
-• 2.1-2.5: Threat actors, attack vectors (phishing), vulnerabilities (zero-day), malicious indicators, mitigations (segmentation).
+## Background (Before the Sprint)
 
-• 3.1-3.4: Architecture models (cloud/hybrid), infrastructure security (firewalls/VPNs), data protection (encryption), resilience/HA.
+### Pre-2026 Foundation (July–August 2025)
 
-• Already comfortable with networking fundamentals and troubleshooting.
+I previously covered selected Security+ topics before pausing for my Master's thesis/project:
 
-• Had some hands-on security exposure (CTFs, labs, basic tools like Nmap and SIEM-style logging).
+#### Domain 1 (1.1–1.4)
+- CIA Triad  
+- AAA (Authentication, Authorization, Accounting)  
+- Zero Trust Architecture  
+- Security controls  
+- Change management  
+- PKI and cryptography basics  
 
-**Resources I used**
-• Official CompTIA Security+ SY0-701 exam objectives PDF.
+#### Domain 2 (2.1–2.5)
+- Threat actors and motivations  
+- Attack vectors (e.g., phishing)  
+- Vulnerabilities (e.g., zero-day)  
+- Indicators of compromise  
+- Mitigation techniques (e.g., segmentation)  
 
-• Free MCQ sites like ExamTopics for domain-specific practice.
+#### Domain 3 (3.1–3.4)
+- Architecture models (cloud, hybrid)  
+- Infrastructure security (firewalls, VPNs)  
+- Data protection (encryption)  
+- Resilience and high availability  
 
-• Cyberkraft selectively for PBQ simulations and test-taking tips.
+---
 
-10-Day Study Plan
-• Day 1 – Domain 1.0 General Security Concepts (12%)
-CIA triad, AAA, Zero Trust, security controls (preventive/detective), change management, PKI/crypto basics. First baseline MCQ test.
+### Existing Skills
 
-• Day 2 – Domain 2.0 Threats, Vulnerabilities, Mitigations (22%)
-Threat actors/motivations, attack vectors (phishing, supply chain), vulnerabilities (zero-day, misconfigs), malware indicators, segmentation/patching. 75 MCQs.
+- Strong networking fundamentals and troubleshooting  
+- Hands-on exposure through:
+  - CTF challenges  
+  - Security labs  
+  - Tools such as Nmap and SIEM-style logging  
 
-• Day 3 – Domain 3.0 Security Architecture (18%)
-Enterprise infrastructure (firewalls, IPS/IDS, VPNs), cloud/hybrid models, data protection (encryption, tokenization), high availability/backups.
+---
 
-• Day 4 – Domain 4.0 Security Operations Part 1 (28%)
-Vulnerability management (CVSS, scanning), monitoring tools (SIEM, logs), asset management, secure baselines for endpoints/servers.
+## Resources Used
 
-• Day 5 – Domain 4.0 Security Operations Part 2 (cont.)
-Identity/access management (MFA, SSO, IAM), incident response phases, automation/orchestration, digital forensics basics. Heavy MCQ day.
+- Official **CompTIA Security+ SY0-701 Exam Objectives (PDF)**  
+- Practice platforms:
+  - ExamTopics (domain-specific MCQs)  
+  - Cyberkraft (PBQs and exam strategies)  
 
-• Day 6 – Domain 5.0 Security Program Management (20%)
-Governance/policies/standards, risk management (ALE, strategies), third-party/vendor risk, compliance frameworks, audits.
+---
 
-• Day 7 – PBQ & Simulation Focus
-Cyberkraft PBQs + free sims (log analysis, firewall rules, hardening configs). Paused to solve independently first.
+## 10-Day Study Plan
 
-• Day 8 – Mixed Practice Exams
-Two full 90-question timed exams across all domains. Logged weak areas, quick objectives re-skim only where needed.
+---
 
-• Day 9 – Light Review & Teach-Back
-Flashcards for acronyms/tricky terms. Taught weak topics (like 4.0 vuln mgmt) out loud. Light MCQ refresh.
+### Day 1 – Domain 1: General Security Concepts (12%)
 
-• Day 10 – Final Polish & Exam Mindset
-Final practice exam. Reviewed test strategies (elimination, flagging). Exam logistics + calm warm-up questions.
+**Topics Covered:**
+- CIA Triad  
+- AAA  
+- Zero Trust  
+- Security controls (preventive, detective)  
+- Change management  
+- PKI and cryptography basics  
+
+**Practice:**
+- Baseline MCQ test  
+
+---
+
+### Day 2 – Domain 2: Threats, Vulnerabilities, Mitigations (22%)
+
+**Topics Covered:**
+- Threat actors and motivations  
+- Attack vectors (phishing, supply chain)  
+- Vulnerabilities (zero-day, misconfigurations)  
+- Malware indicators  
+- Mitigation (segmentation, patching)  
+
+**Practice:**
+- ~75 MCQs  
+
+---
+
+### Day 3 – Domain 3: Security Architecture (18%)
+
+**Topics Covered:**
+- Enterprise infrastructure (firewalls, IDS/IPS, VPNs)  
+- Cloud and hybrid models  
+- Data protection (encryption, tokenization)  
+- High availability and backups  
+
+---
+
+### Day 4 – Domain 4: Security Operations (Part 1) (28%)
+
+**Topics Covered:**
+- Vulnerability management (CVSS, scanning)  
+- Monitoring tools (SIEM, logs)  
+- Asset management  
+- Secure baselines  
+
+---
+
+### Day 5 – Domain 4: Security Operations (Part 2)
+
+**Topics Covered:**
+- Identity and access management (MFA, SSO, IAM)  
+- Incident response phases  
+- Automation and orchestration  
+- Digital forensics basics  
+
+**Focus:**
+- Heavy MCQ practice  
+
+---
+
+### Day 6 – Domain 5: Security Program Management (20%)
+
+**Topics Covered:**
+- Governance, policies, standards  
+- Risk management (ALE, risk strategies)  
+- Third-party/vendor risk  
+- Compliance frameworks  
+- Audits  
+
+---
+
+### Day 7 – PBQ & Simulation Focus
+
+**Activities:**
+- Cyberkraft PBQs  
+- Free simulation labs:
+  - Log analysis  
+  - Firewall rule configuration  
+  - System hardening  
+
+**Approach:**
+- Attempted independently before reviewing solutions  
+
+---
+
+### Day 8 – Mixed Practice Exams
+
+**Activities:**
+- Two full-length (90-question) timed exams  
+
+**Focus:**
+- Identify weak areas  
+- Targeted revision using exam objectives  
+
+---
+
+### Day 9 – Light Review & Teach-Back
+
+**Techniques:**
+- Flashcards (acronyms, key concepts)  
+- Teach-back method (explaining topics aloud)  
+
+**Focus Areas:**
+- Weak domains (e.g., vulnerability management)  
+- Light MCQ refresh  
+
+---
+
+### Day 10 – Final Review & Exam Strategy
+
+**Activities:**
+- Final practice exam  
+- Review of exam strategies:
+  - Elimination technique  
+  - Question flagging  
+
+**Preparation:**
+- Exam logistics  
+- Light warm-up questions  
+- Focus on staying calm and confident  
+
+---
+
+## Key Takeaways
+
+- A strong foundation significantly reduces preparation time  
+- Practice questions are critical for identifying weak areas  
+- PBQs require hands-on thinking, not just theory  
+- Teaching concepts improves retention  
+- Consistency and focus matter more than long study hours  
+
+---
