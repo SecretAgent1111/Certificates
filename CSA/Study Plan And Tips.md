@@ -1,5 +1,4 @@
-# SOC Analyst v2 (CSA) - 12 Day Study Roadmap
-
+# CSA - 12 Day Study Roadmap
 ## Executive Summary
 
 Over 12 days, I followed a focused study roadmap for my SOC Analyst v2 certification exam, using the official exam blueprint as my guide.
