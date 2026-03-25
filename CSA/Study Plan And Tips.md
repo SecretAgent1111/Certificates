@@ -36,12 +36,7 @@ Over 12 days, I followed a focused study roadmap for my SOC Analyst v2 certifica
 - SIEM architecture and components
 - Data ingestion, correlation, and enrichment
 - Use case development and alert logic
-- Building practical detection scenarios:
-  - Brute force attacks
-  - Data exfiltration
-  - Privilege abuse and lateral movement
-  - Suspicious process execution
-  - Anomalous network behavior
+- - Practised 20+ SIEM use cases on Splunk (available in Home Labs section)
 - Dashboards and visualization for quick insights
 - Alert triage and prioritization
 
@@ -117,10 +112,9 @@ In late 2025, my priority shifted heavily to my UK master's program, and certifi
 
 ### **The Second Attempt (February 2026)**
 
-By February, after attending training twice, practicing and revising the blueprint domains properly, I felt it was finally the right time to sit the exam again - **even though I still wasn't 100% confident** because of the pressure from my master's work.
 
-I committed anyway, used this **structured 12-day blueprint-aligned roadmap** to pull everything together, and went into the exam with:
-- Understanding of SOC operations and workflows
+Used this **structured 12-day blueprint-aligned roadmap** to pull everything together, and went into the exam with:- Understanding of SOC 
+operations and workflows
 - Practical knowledge of SIEM architectures and use cases
 - Real-world incident response thinking
 - Hands-on cloud SOC concepts (Azure, AWS, GCP)
