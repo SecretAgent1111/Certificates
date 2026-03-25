@@ -1,13 +1,12 @@
-
-# EC-Council Certified SOC Analyst v2 (CSAv2) - 12 Day Study Roadmap
+# SOC Analyst v2 (CSA) - 12 Day Study Roadmap
 
 ## Executive Summary
 
-Over 12 days, I followed a focused study roadmap for the EC‑Council Certified SOC Analyst v2 (CSAv2) exam, using the official exam blueprint as my guide.
+Over 12 days, I followed a focused study roadmap for my SOC Analyst v2 certification exam, using the official exam blueprint as my guide.
 
 ---
 
-## 📚 The 12-Day Study Plan
+## The 12-Day Study Plan
 
 ### **Days 1-2: SOC Fundamentals & Operations**
 - Security operations center (SOC) roles and responsibilities
@@ -84,48 +83,48 @@ Over 12 days, I followed a focused study roadmap for the EC‑Council Certified 
 
 ---
 
-## 🌟 The Study Approach Breakdown
+## The Study Approach Breakdown
 
-I started with the basics of security operations and how a SOC actually runs day to day—roles, workflows, KPIs, and different SOC models—so I had a clear picture of where a SOC analyst fits in.
+I started with the basics of security operations and how a SOC actually runs day to day - roles, workflows, KPIs, and different SOC models - so I had a clear picture of where a SOC analyst fits in.
 
-Then I moved into real‑world threats and TTPs, looking at how attacks play out on the network, hosts, apps, email, and through social engineering, and what kind of IoCs they leave behind.
+Then I moved into real-world threats and TTPs, looking at how attacks play out on the network, hosts, apps, email, and through social engineering, and what kind of IoCs they leave behind.
 
 Once that foundation was set, I spent a couple of days just on logs: Windows/Linux/macOS, firewalls and routers, plus web, database, and email server logs, and how they all tie into centralized logging and a SIEM.
 
-After that, I went deeper into SIEM concepts—architecture, use cases, correlation rules, dashboards, and alert triage—and built a few sample use‑case ideas (brute force, data exfil, privilege abuse, etc.) that a SOC would realistically monitor for.
+After that, I went deeper into SIEM concepts - architecture, use cases, correlation rules, dashboards, and alert triage - and built a few sample use-case ideas (brute force, data exfil, privilege abuse, etc.) that a SOC would realistically monitor for.
 
-The next block was threat intelligence and threat hunting: I reviewed different types of threat intel, common sources and platforms, and how TI can actually drive better detections and incident response. I also walked through hunting ideas using things like PowerShell and Yara‑style approaches, and tied all of that back into the incident response lifecycle: from initial detection to containment, eradication, recovery, and lessons learned.
+The next block was threat intelligence and threat hunting: I reviewed different types of threat intel, common sources and platforms, and how TI can actually drive better detections and incident response. I also walked through hunting ideas using things like PowerShell and Yara-style approaches, and tied all of that back into the incident response lifecycle: from initial detection to containment, eradication, recovery, and lessons learned.
 
 Towards the end, I focused on how incidents are handled in practice (network, application, email, insider, malware), how playbooks structure the response, and where EDR/XDR tools fit in. I wrapped up by revising forensics and basic malware analysis concepts, plus how SOC work changes in cloud environments (Azure with Sentinel, AWS Security Hub, and GCP's security tooling).
 
-On the final day, I condensed everything into short notes per domain and did a few scenario walk‑throughs—"If I got this alert in a SOC, what would I actually do step by step?"—to make sure I wasn't just memorizing theory but thinking like an analyst.
+On the final day, I condensed everything into short notes per domain and did a few scenario walk-throughs - "If I got this alert in a SOC, what would I actually do step by step?" - to make sure I wasn't just memorizing theory but thinking like an analyst.
 
 ---
 
-## 🏆 The Unspoken Truth: My CSA Journey
+## The Unspoken Truth: My Certification Journey
 
 ### **First Attempt (January - March 2025)**
 
-From January to March 2025, I followed the same CSAv2/CSA study structure, but I **didn't clear the exam on my first attempt**.
+From January to March 2025, I followed the same study structure, but I **didn't clear the exam on my first attempt**.
 
-Before that, I had already gone through intensive CSA‑focused training that included a lot of hands‑on work with Splunk and other SOC tooling, which gave me a solid baseline but clearly **not enough exam‑specific focus**.
+Before that, I had already gone through intensive focused training that included a lot of hands-on work with Splunk and other SOC tooling, which gave me a solid baseline but clearly **not enough exam-specific focus**.
 
 ### **The Gap & Recovery (Late 2025 - February 2026)**
 
-In late 2025, my priority shifted heavily to my UK master's program, and CSA preparation slipped into the background. Even then, between December and January I went back for another round of training to:
+In late 2025, my priority shifted heavily to my UK master's program, and certification preparation slipped into the background. Even then, between December and January I went back for another round of training to:
 - Rebuild my confidence
 - Sharpen my SIEM skills
 - Close the gaps I'd identified from my first attempt
 
 ### **The Second Attempt (February 2026)**
 
-By February, after attending training twice, practicing and revising the blueprint domains properly, I felt it was finally the right time to sit the exam again—**even though I still wasn't 100% confident** because of the pressure from my master's work.
+By February, after attending training twice, practicing and revising the blueprint domains properly, I felt it was finally the right time to sit the exam again - **even though I still wasn't 100% confident** because of the pressure from my master's work.
 
-I committed anyway, used this **structured 12‑day blueprint‑aligned roadmap** to pull everything together, and went into the exam with:
-- ✅ A much clearer understanding of SOC operations
-- ✅ Practical knowledge of SIEM workflows
-- ✅ Real-world incident response thinking
-- ✅ Hands-on cloud SOC concepts (Azure, AWS, GCP)
-- ✅ Confidence to think like an analyst, not just repeat theory
+I committed anyway, used this **structured 12-day blueprint-aligned roadmap** to pull everything together, and went into the exam with:
+- Understanding of SOC operations and workflows
+- Practical knowledge of SIEM architectures and use cases
+- Real-world incident response thinking
+- Hands-on cloud SOC concepts (Azure, AWS, GCP)
+- Confidence to think like an analyst, not just repeat theory
 
-**Key Takeaway:** *The second attempt wasn't about studying harder—it was about studying smarter, with exam-specific focus and practical, scenario-based thinking.*
+**Key Takeaway:** *The second attempt wasn't about studying harder - it was about studying smarter, with exam-specific focus and practical, scenario-based thinking.*
