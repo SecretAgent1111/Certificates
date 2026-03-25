@@ -119,5 +119,24 @@ operations and workflows
 
 **Key Takeaway:** *The second attempt wasn't about studying harder - it was about studying smarter, with exam-specific focus and practical, scenario-based thinking.*
 
+## Exam Tips & Strategy
+
+### 1. Bottom-to-Top Approach for Reading Questions
+Read questions from the **last line backwards to the first line**. This helps you understand what the question is asking for first, before diving into the scenario. This way, you don't get lost in the details and can quickly identify the key focus area.
+
+### 2. Eliminate and Compare Answer Options
+Don't just look for the "right" answer—actively **eliminate wrong options first**. Compare each option against the question to see if it matches. Ask yourself: "Does this option actually address what the question is asking?" This process is faster and more reliable than trying to find the perfect answer.
+
+### 3. Focus on Keywords in Questions
+Look for **specific technical keywords** (e.g., "initial detection", "containment", "eradication", "SIEM", "log analysis"). These words directly point you to the domain and concept being tested. Ignore fluffy language and focus on what's being asked.
+
+### 4. Relate Everything to Real SOC Operations
+Every question has a practical SOC angle. Ask yourself: **"How would a real SOC analyst handle this situation?"** This grounds abstract concepts in reality and makes the answer obvious. The exam tests your ability to think like an analyst, not just recite facts.
+
+### 5. Time Management—Flag and Move
+If a question feels unclear after 30-45 seconds, **flag it and move on**. Don't get stuck. Many questions become clearer once you've read others and refreshed your context. You can always revisit flagged questions if time permits.
+
+---
+
 
 
