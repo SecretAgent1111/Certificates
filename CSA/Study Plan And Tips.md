@@ -84,7 +84,7 @@ Once that foundation was set, I spent a couple of days just on logs: Windows/Lin
 
 After that, I went deeper into SIEM concepts - architecture, use cases, correlation rules, dashboards, and alert triage - and built a few sample use-case ideas (brute force, data exfil, privilege abuse, etc.) that a SOC would realistically monitor for.
 
-The next block was threat intelligence and threat hunting: I reviewed different types of threat intel, common sources and platforms, and how TI can actually drive better detections and incident response. I also walked through hunting ideas using things like PowerShell and Yara-style approaches, and tied all of that back into the incident response lifecycle: from initial detection to containment, eradication, recovery, and lessons learned.
+The next block was threat intelligence and threat hunting: I reviewed different types of threat intel, common sources and platforms, and how it can actually drive better detections and incident response. I also walked through hunting ideas using things like PowerShell and Yara-style approaches, and tied all of that back into the incident response lifecycle: from initial detection to containment, eradication, recovery, and lessons learned.
 
 Towards the end, I focused on how incidents are handled in practice (network, application, email, insider, malware), how playbooks structure the response, and where EDR/XDR tools fit in. I wrapped up by revising forensics and basic malware analysis concepts, plus how SOC work changes in cloud environments (Azure with Sentinel, AWS Security Hub, and GCP's security tooling).
 
