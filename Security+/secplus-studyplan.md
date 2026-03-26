@@ -1,7 +1,7 @@
 # Security+ - Study Roadmap
 ---
 ## The 10-Day Study Plan
-### **Day 1: General Security Concepts **
+### **Day 1: General Security Concepts**
 - CIA Triad and security fundamentals
 - AAA (Authentication, Authorization, Accounting)
 - Zero Trust Architecture principles
@@ -10,7 +10,7 @@
 - PKI, certificates, and cryptography basics
 - Practice: Baseline MCQ test to gauge starting level
 
-### **Day 2: Threats, Vulnerabilities & Mitigations **
+### **Day 2: Threats, Vulnerabilities & Mitigations**
 - Threat actors: motivations, capabilities, and profiles
 - Attack vectors:
   - Phishing and social engineering
@@ -27,7 +27,7 @@
   - Application whitelisting
 - Practice: ~75 MCQs covering Domain 2
 
-### **Day 3: Security Architecture **
+### **Day 3: Security Architecture**
 - Enterprise infrastructure:
   - Firewalls and IDS/IPS
   - VPNs and secure remote access
@@ -41,7 +41,7 @@
   - RAID, clustering, and replication
   - Backup strategies and restoration testing
 
-### **Day 4: Security Operations - Part 1 **
+### **Day 4: Security Operations - Part 1**
 - Vulnerability management:
   - CVSS scoring and prioritization
   - Scanning tools and schedules
@@ -68,7 +68,7 @@
   - Memory and disk analysis basics
 - Focus: Heavy MCQ practice across Domains 4 & 5
 
-### **Day 6: Security Program Management **
+### **Day 6: Security Program Management**
 - Governance, policies, standards, and procedures
 - Risk management:
   - ALE and quantitative risk assessment
@@ -134,9 +134,9 @@
 - Day 10: Final practice exam, exam strategy review (elimination, flagging), and logistics check. The goal was staying calm and confident going in.
 
 ## Resources Used
-- Official **CompTIA Security+ SY0-701 Exam Objectives (PDF)** – kept this open the entire time as my blueprint
-- **ExamTopics** – domain-specific MCQs for daily practice
-- **Cyberkraft** – PBQs and exam strategy walkthroughs
+- Official**CompTIA Security+ SY0-701 Exam Objectives (PDF)** – kept this open the entire time as my blueprint
+-**ExamTopics** – domain-specific MCQs for daily practice
+-**Cyberkraft** – PBQs and exam strategy walkthroughs
 
 ---
 ## Key Takeaways
