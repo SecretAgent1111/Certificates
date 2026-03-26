@@ -135,8 +135,8 @@
 
 ## Resources Used
 - Official**CompTIA Security+ SY0-701 Exam Objectives (PDF)** – kept this open the entire time as my blueprint
--**ExamTopics** – domain-specific MCQs for daily practice
--**Cyberkraft** – PBQs and exam strategy walkthroughs
+- **ExamTopics** – domain-specific MCQs for daily practice
+- **Cyberkraft** – PBQs and exam strategy walkthroughs
 
 ---
 ## Key Takeaways
