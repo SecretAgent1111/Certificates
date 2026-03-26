@@ -14,6 +14,10 @@ I'm giving myself **15 focused days** to prepare for CEH v13, strictly using the
 
 I'm touching every blueprint area, but I'm spending extra energy on recon, scanning/enumeration, system hacking, network/web attacks, and the new AI/cloud/AD pieces.
 
+- Week 1 (Days 1-5): Build the foundation - understand the blueprint, master recon/scanning/enumeration, learn system hacking phases, and map vulnerabilities to attack paths.
+- Week 2 (Days 6-10): Attack surfaces and defenses - cover network attacks, web exploitation, wireless/mobile/IoT/cloud security, and cryptography fundamentals.
+- Week 3 (Days 11-15): Modern threats, consolidation, and exam readiness - tackle social engineering, AI-driven threats, full blueprint review, mock exams, and final prep.
+
 **Day 1 - Foundations & Exam Orientation**
 I align myself with the blueprint on Day 1: I read the CEH v13 brochure/blueprint, note the domains, and understand what weight each area has. I then revise core infosec basics (CIA triad, controls, threat actors, legal/ethical hacking) so the fundamentals are fresh. I also set up my OneNote structure (sections for domains, tools, labs, AI, and weak areas).
 
