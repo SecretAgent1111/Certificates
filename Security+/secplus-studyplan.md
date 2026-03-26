@@ -123,28 +123,19 @@
 
 ---
 ## The Study Approach Breakdown
-I started with General Security Concepts since they form the foundation of everything else. CIA Triad, AAA, Zero Trust, security controls, PKI, and change management are the building blocks you keep referring back to. Once that was solid, I took a baseline MCQ test to see where I actually stood.
+- Day 1: Covered CIA Triad, AAA, Zero Trust, security controls, PKI, and cryptography basics. Ran a baseline MCQ test to gauge my starting point.
+- Day 2: Focused on threats, vulnerabilities, and mitigations. Around 75 MCQs helped reinforce the key distinctions between attack types.
+- Day 3: Security Architecture. Covered firewalls, IDS/IPS, VPNs, cloud models, and data protection. Made sure to understand the why behind each mechanism.
+- Days 4-5: Security Operations split across two days. Part 1 on vulnerability management, SIEM, and monitoring. Part 2 on IAM, incident response, and forensics. Heavy MCQ practice throughout.
+- Day 6: Security Program Management. Governance, policies, risk management, compliance frameworks like GDPR and HIPAA, and audit types. Extra focus on ALE calculations.
+- Day 7: PBQ and simulation practice on Cyberkraft. Worked through log analysis, firewall configuration, and system hardening labs. Tried each one independently first.
+- Day 8: Two full-length timed practice exams. Used the results to identify weak areas and went back for targeted revision with the exam objectives.
+- Day 9: Light review with flashcards and the teach-back method. If I couldn't explain something without notes, I went back to revise it.
+- Day 10: Final practice exam, exam strategy review (elimination, flagging), and logistics check. The goal was staying calm and confident going in.
 
-Then I spent a solid day on Threats and Vulnerabilities. This is the biggest domain (22%), so I went deep on threat actor motivations, attack vectors like phishing and supply chain, and how to identify IoCs. Around 75 MCQs that day helped lock in the key distinctions between similar-sounding threats.
-
-Day 3 was Security Architecture. I reviewed enterprise infrastructure (firewalls, IDS/IPS, VPNs), cloud and hybrid models, and data protection methods. Encryption, tokenization, and high availability concepts are heavily tested here, so I made sure to understand the "why" behind each mechanism, not just the "what."
-
-Days 4 and 5 covered Security Operations, which is the heaviest domain at 28%. I split it in two: Part 1 focused on vulnerability management, SIEM and monitoring, and secure baselines. Part 2 covered IAM, incident response, automation, and digital forensics. I did heavy MCQ practice throughout these two days because this domain has a lot of scenario-based questions.
-
-Day 6 was Security Program Management. Governance, policies, risk management, compliance frameworks, and audits. I paid extra attention to ALE calculations and the differences between GDPR, HIPAA, and PCI-DSS since those come up a lot.
-
-Day 7 was all about PBQs and simulations. I used Cyberkraft for PBQ practice and did free simulation labs on log analysis, firewall rules, and system hardening. I made a point to attempt each one independently before looking at solutions—that helped me understand what the exam expects in terms of practical thinking.
-
-Day 8 was two full-length practice exams under timed conditions. The point wasn't to ace them but to find my weak spots. After each exam, I went back to the exam objectives and did targeted revision on the areas I struggled with.
-
-Day 9 was a lighter review. I used flashcards for acronyms and key terms, and the teach-back method to explain concepts out loud. If I couldn't explain something clearly without looking at my notes, I knew I needed to revisit it.
-
-Day 10 was the final review. One more practice exam to stay sharp, a review of exam strategies like elimination and flagging, and making sure all the logistics were sorted. The key was staying calm—going in with confidence and knowing I'd put in the work.
-
----
 ## Resources Used
 - Official **CompTIA Security+ SY0-701 Exam Objectives (PDF)** – kept this open the entire time as my blueprint
-- **ExamTopics** – domain-specific MCQs for daily practice
+- - **ExamTopics** – domain-specific MCQs for daily practice
 - **Cyberkraft** – PBQs and exam strategy walkthroughs
 
 ---
