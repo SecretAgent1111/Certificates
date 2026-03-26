@@ -146,3 +146,9 @@ With 125 questions in 4 hours, I aim to finish most questions in under a minute.
 ### 6. Respect the High-Weight Areas
 
 I know CEH v13 leans heavily on system hacking, network/perimeter attacks, web security, recon/scanning, and newer areas like cloud, AD, ransomware, and IoT/OT. During the exam, when questions from these domains appear, I slow down just enough to apply my full strategy instead of rushing and making silly mistakes.
+
+---
+
+## Thank You
+
+Thank you for reading my CEH v13 study plan. This is my commitment to myself - to learn, to grow, and to become the ethical hacker I know I can be. Every page of notes, every lab, every failed attempt has been a step forward. See you on the other side of the exam.
