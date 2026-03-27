@@ -8,7 +8,7 @@
 
 A **Cyber Threat** is an act where an adversary attempts to:
 
-- Gain unauthorized access
+- Gain Unauthorized access
 - Exploit communication paths
 - Compromise systems or data
 
