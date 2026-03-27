@@ -5,7 +5,7 @@
 ## 1. Security Management
 
 **Definition**  
-Security Management is a set of security activities executed by organizations to maintain their security posture at an adequate level.
+Security management is a set of security activities executed by organizations to maintain their security posture at an adequate level.
 
 - **Focus:** Governance + Strategy + Control
 - **Goal:** Ensure protection of systems, data, and operations
