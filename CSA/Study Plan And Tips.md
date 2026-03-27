@@ -140,7 +140,7 @@ If a question feels unclear after 30-45 seconds, **flag it and move on**. Don't 
 
 ## Thank You
 
-Thank you for reading my CSA study plan. This journey from SOC fundamentals to threat analysis has taught me that cybersecurity is not just about tools and techniques - it's about mindset, persistence, and never stopping learning. Every tip, every practice question, every lab session has brought me closer to becoming the analyst I want to be. See you on the other side.
+Thank you for reading my CSA study plan. This journey from SOC fundamentals to threat analysis has taught me that cybersecurity is not just about tools and techniques - it's about mindset, persistence, and never stopping learning. Every tip, every practice question, every lab session has brought me closer to becoming the analyst I want to be. See you on the other side....:)
 
 ---
 
