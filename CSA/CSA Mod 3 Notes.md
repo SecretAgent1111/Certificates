@@ -7,7 +7,7 @@
 ### Definition
 
 **Incident**
-- A security-relevant occurrence that impacts or has the potential to impact an organization
+- A Security-Relevant occurrence that impacts or has the potential to impact an organization
 - Can be:
   - **Intentional** — attacks, insider threats
   - **Unintentional** — misconfiguration, human error
