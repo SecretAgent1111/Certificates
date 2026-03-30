@@ -1,4 +1,4 @@
-# My 15-Day CEH v13 Study Plan
+# My CEH v13 Study Plan
 
 ## Study Roadmap - How I'm Attacking CEH v13
 
