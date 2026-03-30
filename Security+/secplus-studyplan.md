@@ -114,10 +114,6 @@
 - Exam strategy review:
   - Elimination technique for narrowing down options
   - Question flagging and time allocation
-- Preparation checklist:
-  - Exam logistics confirmed
-  - ID and confirmation documents ready
-  - Light warm-up questions only
 - Mental preparation: stayed calm, confident, and well-rested
 
 ---
