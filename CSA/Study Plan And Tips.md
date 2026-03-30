@@ -2,8 +2,6 @@
 
 ---
 
-## The 12-Day Study Plan
-
 ### **Days 1-2: SOC Fundamentals & Operations**
 - Security operations center (SOC) roles and responsibilities
 - Daily SOC workflows and incident handling processes
