@@ -1,6 +1,5 @@
 # Security+ - Study Roadmap
 ---
-## The 10-Day Study Plan
 ### **Day 1: General Security Concepts**
 - CIA Triad and security fundamentals
 - AAA (Authentication, Authorization, Accounting)
