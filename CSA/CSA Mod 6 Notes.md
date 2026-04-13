@@ -921,10 +921,4 @@ SIEM detects → SOAR responds
 SIEM detects → EDR provides endpoint data → XDR correlates → SOAR automates response
 ```
 
-## Top SOC Takeaways
-- Insider threats = hardest to detect
-- Email + Malware = most common attack vectors
-- Logging + Monitoring = backbone of SOC
-- Least privilege = strongest control
-- Detection depends on visibility
-- **"If it's not logged, it's not detectable."**
+
