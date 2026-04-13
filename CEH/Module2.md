@@ -1,4 +1,4 @@
-# Module 2: Reconnaissance and Footprinting
+# Module 2
 
 ## 1. Reconnaissance
 
