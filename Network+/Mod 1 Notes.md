@@ -279,3 +279,150 @@ Solutions:
 Dual stack
 Tunneling
 NAT64
+
+
+Network+ Notes – 1.8 Modern Network Environments
+🌐 1. Software-Defined Networking (SDN) & SD-WAN
+🔹 What is SDN?
+
+Software-Defined Networking (SDN) separates:
+
+Control Plane (decision making)
+Data Plane (packet forwarding)
+
+👉 Instead of configuring each device manually, a central controller manages the network
+
+🔹 What is SD-WAN?
+
+Software-Defined Wide Area Network (SD-WAN) applies SDN principles to WANs.
+
+👉 It intelligently routes traffic across:
+
+MPLS
+Broadband
+LTE/5G
+🔥 Key Features
+✅ Application-aware routing
+Traffic is routed based on application (e.g., Zoom vs YouTube)
+Critical apps get priority
+✅ Zero-touch provisioning (ZTP)
+Devices auto-configure when plugged in
+No manual setup required
+✅ Transport agnostic
+Works across any network type
+Doesn’t depend on MPLS only
+✅ Centralized policy management
+Admin controls everything from one dashboard
+Policies pushed to all devices instantly
+🧠 2. VXLAN (Virtual Extensible LAN)
+🔹 What is VXLAN?
+
+A Layer 2 overlay technology over Layer 3 networks
+
+👉 It allows you to extend VLANs across different physical locations
+
+🔥 Key Use Cases
+✅ Data Center Interconnect (DCI)
+Connects multiple data centers
+Enables VM migration across locations
+✅ Layer 2 encapsulation
+Wraps Layer 2 frames inside Layer 3 packets
+Uses UDP encapsulation
+🧠 Why VXLAN matters
+Traditional VLANs limited (~4096)
+VXLAN supports 16 million segments
+🔐 3. Zero Trust Architecture (ZTA)
+🔹 Concept:
+
+👉 "Never trust, always verify"
+
+No device/user is trusted automatically — even inside the network.
+
+🔥 Key Principles
+✅ Policy-based authentication
+Access based on identity, device, location
+✅ Authorization
+Users only access what they are allowed
+✅ Least privilege access
+Minimum permissions required
+Reduces attack surface
+☁️ 4. SASE / SSE
+🔹 SASE (Secure Access Service Edge)
+
+Combines:
+
+Networking (SD-WAN)
+Security (firewall, CASB, ZTNA)
+
+👉 Delivered via cloud
+
+🔹 SSE (Security Service Edge)
+
+Subset of SASE focused only on security services
+
+🔥 Why it matters
+Remote workforce support
+Cloud-first security model
+Replaces traditional perimeter security
+⚙️ 5. Infrastructure as Code (IaC)
+🔹 What is IaC?
+
+Managing infrastructure using code instead of manual configuration
+
+🔥 Key Features
+✅ Automation
+No manual device configuration
+✅ Playbooks / Templates
+Reusable configurations
+Example: Ansible playbooks
+✅ Configuration drift & compliance
+Detects unauthorized changes
+Ensures consistency
+✅ Upgrades
+Automated patching and updates
+✅ Dynamic inventories
+Automatically tracks systems/resources
+🔹 Source Control (Important for interviews)
+✅ Version control
+Tracks changes over time
+✅ Central repository
+Single source of truth (e.g., GitHub)
+✅ Conflict identification
+Detects overlapping changes
+✅ Branching
+Test changes safely before production
+🌍 6. IPv6 Addressing
+🔹 Why IPv6?
+
+👉 IPv4 exhaustion (limited addresses)
+
+IPv6 provides:
+
+128-bit addresses
+Huge address space
+🔥 Key Benefits
+No need for NAT (end-to-end connectivity)
+Better routing efficiency
+Built-in security (IPSec support)
+🔹 Compatibility Techniques
+✅ Dual Stack
+Runs IPv4 + IPv6 together
+✅ Tunneling
+IPv6 traffic over IPv4 network
+✅ NAT64
+Allows IPv6 devices to communicate with IPv4 servers
+🧠 Exam Tip (VERY IMPORTANT)
+
+👉 NAT64 is often confused:
+
+It does NOT convert entire network
+It translates between IPv6 ↔ IPv4
+🧠 FINAL SUMMARY (Quick Revision)
+Concept	Key Idea
+SDN	Centralized network control
+SD-WAN	Smart WAN routing
+VXLAN	Extend Layer 2 over Layer 3
+ZTA	Never trust, always verify
+SASE/SSE	Cloud-based security
+IaC	Automate infrastructure via code
+IPv6	Solve IP exhaustion
